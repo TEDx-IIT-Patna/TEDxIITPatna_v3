@@ -1,0 +1,251 @@
+.landing{
+    position: relative;
+}
+
+.black-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.logo-container{
+    display: block;
+    position: absolute;
+    top: 12rem;
+    transform: translate(0, -50%);
+}
+.logo-container .barcode{
+    height: 75px;
+    transform: translate(0, -50%);
+}
+.logo-container .logo {
+    height: 150px;
+    margin-left: 1rem
+}
+
+/* painted X */
+.paintedx{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.paintedx img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    transform: scaleX(-1) translate(0, -50%);
+}
+
+/* Countdown timer */
+.countdown-container{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2% 2.5vw;
+    /* border: 1px solid red; */
+}
+
+.countdown-container .title{
+    margin-left: 5ch;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.countdown-container .countdown{
+    font-size: calc(100 * (100vw / 1080));
+    color: var(--white-d1);
+}
+.countdown-container .countdown span{
+    color: black;
+    font-weight: 700;
+}
+
+/* theme section */
+.theme.infaff{
+    display: grid;
+    position: relative;
+    place-content: center;
+    overflow: hidden;
+}
+.theme.infaff .bg{
+    width: 100%;
+}
+.theme.infaff .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: calc(80 * (clamp(200px, 30vw, 300px) / 1080));
+    line-height: calc(200 * (clamp(200px, 30vw, 300px) / 1080));
+    font-weight: 700;
+    letter-spacing: calc(100 * (clamp(200px, 30vw, 300px) / 1080));
+}
+
+/* text sections */
+.content-wrapper{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 15%;
+    /* border: 1px solid red; */
+}
+.content-wrapper:nth-child(even){
+    flex-direction: row;
+}
+.content-wrapper:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+/* default styles for even children */
+.content-wrapper .graphic{
+    position: relative;
+}
+.content-wrapper .graphic::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 50vh;
+    max-height: calc(9/16 * 100vw);
+    transform: translate(0, -50%);
+    background-color: var(--red-l1);
+    z-index: -1;
+}
+
+.content-wrapper .graphic#a::before{
+    width: 100%;
+}
+.content-wrapper .graphic#a{
+    margin-left: 5%;
+}
+.content-wrapper .graphic#a img{
+    width: 22vw;
+    max-width: 200px;
+    min-width: 150px;
+}
+.content-wrapper .graphic#b img{
+    width: 30vw;
+    max-width: 300px;
+    min-width: 200px;
+}
+.content-wrapper .graphic#c img{
+    width: 30vw;
+    max-width: 300px;
+    min-width: 250px;
+    transform: translate(4%, 0);
+}
+
+.content-wrapper .content{
+    margin: 0 2rem 0 4rem;
+}
+
+.content-wrapper .content .title{
+    text-align: left;
+    max-width: 600px;
+    font-size: calc(150 * (clamp(250px, 36vw, 580px) / 1080));
+    font-weight: 700;
+}
+
+.content-wrapper .content .text{
+    max-width: 600px;
+    margin-top: 2.5rem;
+    text-align: justify;
+    font-size: calc(35 * (clamp(500px, 36vw, 580px) / 1080));
+    font-weight: 400;
+    line-height: calc(50 * (clamp(500px, 36vw, 580px) / 1080));
+}
+
+.content-wrapper .content .link{
+    float: right;
+    max-width: 50%;
+    text-align: right;
+    margin: 1rem 0;
+    color: var(--red);
+    font-size: calc(35 * (clamp(500px, 36vw, 580px) / 1080));
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s;
+}
+.content-wrapper .content .link:hover{
+    text-decoration-color: var(--red);
+}
+.content-wrapper .content .link::after{
+    content: '→';
+    display: inline-block;
+    margin-left: 1ch;
+}
+
+/* style for odd children */
+.content-wrapper:nth-child(odd) .content{
+    margin: 0 4rem 0 2rem
+}
+
+.content-wrapper:nth-child(odd) .graphic::before{
+    left: unset;
+    right: 0;
+}
+
+/* speaker application section */
+.speaker-application{
+    display: flex;
+    position: relative;
+    padding: 0 20%;
+    margin: 10vh 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-application .title{
+    max-width: 400px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.speaker-application .link{
+    display: inline-block;
+    position: relative;
+    margin: 3rem 2rem;
+    padding: 1rem 2rem;
+    color: var(--red);
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--red);
+    transition: color 0.2s;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.speaker-application .link:hover{
+    color: white;
+    background-color: var(--red);
+}
+
+.disclaimer{
+    font-size: calc(50 * (clamp(250px, 80vw, 300px) / 1080));
+}
+
+/* need some extra padding here before footer */
+footer{
+    margin-top: 20vh;
+}

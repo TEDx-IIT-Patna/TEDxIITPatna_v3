@@ -1,0 +1,198 @@
+footer .footer-img {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "logo logo"
+        "links map"
+        "disclaimer disclaimer"
+    ;
+    width: 100%;
+    padding: 0% 8%;
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+footer .logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 4rem 0;
+    height: 10vh;
+    min-height: 36px;
+    max-height: 50px;
+    /* border: 1px solid red; */
+}
+
+footer .logo img {
+    height: 100%;
+}
+
+footer .Map {
+    grid-area: map;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer .Map iframe {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+}
+
+/* the links on the left-side in web-view */
+footer .left-wrapper {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas:
+        "nav misc"
+        "socials socials"
+    ;
+    grid-gap: 1rem;
+    grid-template-rows: auto;
+}
+
+/* .nav-links are links to other pages in site */
+footer .nav-links {
+    grid-area: nav;
+}
+
+/* .nav-links are external links and all */
+footer .misc-links {
+    grid-area: misc;
+}
+
+.nav-links,
+footer .misc-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-size: calc(50 * (clamp(250px, 50vw, 300px) / 1080));
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.nav-links a,
+footer .misc-links a {
+    margin: 0.6ch 1ch;
+}
+
+/* social buttons + email */
+footer .socials {
+    grid-area: socials;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+footer .socials .email {
+    text-decoration: underline;
+    color: var(--red-l1);
+    margin: 0.6ch 1ch;
+
+    font-weight: 500;
+    letter-spacing: 0.07rem;
+}
+
+footer .socials .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+}
+
+footer .socials .link {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+footer .socials .link+.link {
+    margin-left: 1rem;
+}
+
+footer .socials .link .icon {
+    width: 100%;
+}
+
+footer .socials .link .name {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    padding: 0.35ch 1ch;
+    color: var(--red-l1);
+    background: white;
+    border-radius: 100px;
+    transform: translate(-50%, 10px);
+    transition: all 0.2s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+footer .socials .link:hover .name {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
+
+footer .disclaimer {
+    grid-area: disclaimer;
+    text-align: center;
+    padding: 5%;
+    text-transform: capitalize;
+}
+
+/* mobile view */
+@media only screen and (max-width: 1000px){
+    footer {
+        grid-template-areas:
+            "logo logo"
+            "map map"
+            "links links"
+            "disclaimer disclaimer"
+        ;
+        padding: 0 5%;
+        place-content: center;
+    }
+    footer .Map {
+        justify-content: center;
+    }
+    footer .Map iframe {
+        width: 90%;
+        min-width: unset;
+        max-width: unset;
+        height: 25vh;
+        aspect-ratio: unset;
+    }
+    footer .left-wrapper {
+        margin-top: 3rem;
+        grid-template-columns: auto auto;
+        place-content: center;
+    }
+    footer .nav-links {
+        align-items: flex-end;
+        text-align: right;
+    }
+    footer .socials {
+        align-items: center;
+    }
+}
