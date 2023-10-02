@@ -2,7 +2,7 @@ section.about {
   padding-right: 27vw;
   text-align: justify;
   color: #fff;
-  background-color: #0C0C0C;
+  
 }
 
 .section-title {
@@ -79,6 +79,7 @@ section.about {
   width: 100%;
   min-height: 100vh;
   padding: 5vh 6vw;
+  background-color: #0C0C0C;
 }
 
 .text-wrapper .content {
