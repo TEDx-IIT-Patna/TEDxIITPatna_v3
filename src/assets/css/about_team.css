@@ -1,6 +1,7 @@
 section.team {
   padding-right: 27vw;
   color: #fff;
+  background-color: #0c0c0c;
 }
 
 section.team .group {
@@ -50,11 +51,11 @@ section.team .group {
   width: 100%;
   min-height: 100vh;
   padding: 5vh 6vw;
-  background-color: #0C0C0C;
 }
 
 section.team .group .content {
   max-width: 800px;
+  background-color: #0C0C0C;
 }
 
 section.team .card-container {
