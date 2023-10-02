@@ -244,8 +244,3 @@
 .disclaimer{
     font-size: calc(50 * (clamp(250px, 80vw, 300px) / 1080));
 }
-
-/* need some extra padding here before footer */
-footer{
-    margin-top: 20vh;
-}

@@ -14,3 +14,7 @@ section.team.mobile .group .heading::after{
 section.team.mobile .card-container .card{
     margin: 1.5rem;
 }
+
+section.team.mobile .card-container {
+    padding: 0rem;
+}
