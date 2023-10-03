@@ -17,6 +17,7 @@ section.about.mobile{
 
 section.about.mobile .text-wrapper{
     padding: 10vh 5vw;
+    display: block;
 }
 
 section.about.mobile .text-wrapper .content{
