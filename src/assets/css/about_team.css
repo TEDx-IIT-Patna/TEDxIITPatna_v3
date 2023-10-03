@@ -52,6 +52,9 @@ section.team .group {
   min-height: 100vh;
   padding: 5vh 6vw;
   background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section.team .group .content {
