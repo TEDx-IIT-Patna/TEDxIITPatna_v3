@@ -1,5 +1,13 @@
+/* @font-face{
+    font-family: 'Molend';
+    src: url('/TEDxIITPatna_v3/Molend%20Font%5B1%5D/molendregular-mvd6p.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
 .landing{
     position: relative;
+    background-color:#111111;
 }
 
 .black-bg{
@@ -8,7 +16,7 @@
     right: 0;
     width: 50vw;
     height: 100vh;
-    background-color: black;
+    background-color: #111111;
 }
 
 .logo-container{
@@ -24,6 +32,7 @@
 .logo-container .logo {
     height: 150px;
     margin-left: 1rem
+    
 }
 
 /* painted X */
@@ -42,6 +51,7 @@
     right: 0;
     width: 100%;
     transform: scaleX(-1) translate(0, -50%);
+    background-color: #111111;
 }
 
 /* Countdown timer */
@@ -51,23 +61,27 @@
     left: 0;
     bottom: 0;
     padding: 2% 2.5vw;
+    background-color: #111111;
     /* border: 1px solid red; */
 }
 
 .countdown-container .title{
+    
     margin-left: 5ch;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
+    background-color: #111111;
 }
 
 .countdown-container .countdown{
     font-size: calc(100 * (100vw / 1080));
     color: var(--white-d1);
+    background-color:#111111;
 }
 .countdown-container .countdown span{
-    color: black;
+    color: #111111;
     font-weight: 700;
 }
 
@@ -77,6 +91,7 @@
     position: relative;
     place-content: center;
     overflow: hidden;
+    background-color: black;
 }
 .theme.infaff .bg{
     width: 100%;
@@ -104,6 +119,7 @@
     justify-content: center;
     align-items: center;
     padding: 5% 15%;
+    background-color: #111111;
     /* border: 1px solid red; */
 }
 .content-wrapper:nth-child(even){
@@ -138,53 +154,133 @@
     margin-left: 5%;
 }
 .content-wrapper .graphic#a img{
-    width: 22vw;
-    max-width: 200px;
-    min-width: 150px;
+   margin-bottom: 200px;
+    width: 590.8px;
+height: 630.524px;
+flex-shrink: 0;
+
 }
 .content-wrapper .graphic#b img{
-    width: 30vw;
-    max-width: 300px;
+    width: 50vw;
+    max-width: 500px;
+    height: 500px;
     min-width: 200px;
+    margin-right: 100px;
 }
 .content-wrapper .graphic#c img{
     width: 30vw;
-    max-width: 300px;
+    max-width: 800px;
     min-width: 250px;
+    margin-left: 150px;
     transform: translate(4%, 0);
 }
-
+.content-wrapper .content .Link img{
+    width: 30.006px;
+    height: 30.052px;
+    flex-shrink: 0;
+    fill: #FFF;
+}
 .content-wrapper .content{
     margin: 0 2rem 0 4rem;
 }
-
+.content-wrapper .content .Title{
+    
+    width: 577px;
+    position:relative;
+    color: #FFF;
+    text-align: justify;
+    font-family:"Molend", sans-serif;
+    font-size: 79.265px;
+    font-style: normal;
+    font-weight: 750;
+     line-height: 95.2%; /* 75.46px */
+    
+    }
 .content-wrapper .content .title{
     text-align: left;
     max-width: 600px;
-    font-size: calc(150 * (clamp(250px, 36vw, 580px) / 1080));
-    font-weight: 700;
+    font-size: calc(120 * (clamp(40px, 36vw, 580px) / 1080));
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color:#FF2B1D;
 }
-
+.content-wrapper .content .Text{
+  color: #B5B5B5;
+  text-align: justify;
+font-family: "Poppins", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 2.5rem;
+}
 .content-wrapper .content .text{
     max-width: 600px;
+
     margin-top: 2.5rem;
     text-align: justify;
-    font-size: calc(35 * (clamp(500px, 36vw, 580px) / 1080));
+    font-size: calc(40 * (clamp(500px, 36vw, 580px) / 1080));
     font-weight: 400;
     line-height: calc(50 * (clamp(500px, 36vw, 580px) / 1080));
+    color:#FFF;
+}
+
+.content-wrapper .content .Title .X{
+   
+ color:#EB0028;
+ position: absolute;
+ margin-right: 0;
+ top: -20px;
+ 
+flex-shrink: 0;
+}
+.content-wrapper .content .Link{
+    display: inline-block;
+    position: left;
+    margin: 3rem 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    border: 1px;
+    transition: color 0.2s;
+    border-radius: 4px;
+  
+    color: #FFF;
+    font-family: Poppins;
+    font-family: normal;
+
+
+   font-size: calc(40 * (clamp(500px, 36vw, 580px) / 1080));
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    background-color: #BA0000;
+}
+.content-wrapper .content .Link img{
+   margin-left: 10px;
 }
 
 .content-wrapper .content .link{
-    float: right;
-    max-width: 50%;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    margin: 3rem 2rem;
+    padding: 1rem 2rem;
+
     text-align: right;
-    margin: 1rem 0;
+    border: 1px;
+    transition: color 0.2s;
+    border-radius: 4px;
+    overflow: hidden;
+
+    /*max-width: 50%;*/
     color: var(--red);
     font-size: calc(35 * (clamp(500px, 36vw, 580px) / 1080));
-    font-weight: 500;
+    font-weight: 540;
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: text-decoration-color 0.2s;
+   color: #BA0000;
 }
 .content-wrapper .content .link:hover{
     text-decoration-color: var(--red);
@@ -209,11 +305,12 @@
 .speaker-application{
     display: flex;
     position: relative;
-    padding: 0 20%;
-    margin: 10vh 0;
+    padding: 0;
+  
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #111111;
 }
 
 .speaker-application .title{
@@ -221,11 +318,13 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+    color: #FFF;
 }
 
 .speaker-application .link{
     display: inline-block;
     position: relative;
+    background-color: #FFF;
     margin: 3rem 2rem;
     padding: 1rem 2rem;
     color: var(--red);
@@ -237,7 +336,7 @@
     overflow: hidden;
 }
 .speaker-application .link:hover{
-    color: white;
+    color:black;
     background-color: var(--red);
 }
 
@@ -247,5 +346,6 @@
 
 /* need some extra padding here before footer */
 footer{
-    margin-top: 20vh;
+    margin-top: 0;
+    background-color: #0A0A0A;;
 }
