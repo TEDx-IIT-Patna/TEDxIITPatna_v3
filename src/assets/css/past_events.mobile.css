@@ -2,6 +2,7 @@
     position: relative;
     padding: 0 0 0 10%;
     place-content: unset;
+    background-color: black;
 }
 .wrapper.mobile::before{
     content: '';
@@ -45,6 +46,11 @@
     top: min(20vh, 150px);
     padding-left: 5vw;
     font-size: calc(120 * (clamp(300px, 80vw, 600px) / 1080));
+    color: #FF2B1D;
+/* font-family: Poppins; */
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
 
 .wrapper.mobile .event-scroller{

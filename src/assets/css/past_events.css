@@ -13,8 +13,7 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
-
-    background-image: url('@/assets/images/paintedx.png');
+    background-color: black;    /* background-image: url('@/assets/images/paintedx.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -38,12 +37,15 @@
 }
 
 .pastevents-wrapper .title{
-    width: 100%;
-    margin-bottom: 4rem;
-    text-align: left;
-    font-size: calc(160 * (clamp(300px, 80vw, 600px) / 1080));
-    font-weight: 700;
+/* font-family: Poppins; */
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: calc(185 * (clamp(300px, 80vw, 600px) / 1080));
 }
+
+
 
 .event-scroller{
     display: flex;
