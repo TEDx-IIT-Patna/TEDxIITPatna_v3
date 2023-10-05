@@ -204,7 +204,7 @@ flex-shrink: 0;
     max-width: 577px;
     position:relative;
     color: #FFF;
-    text-align: left;
+    text-align: center;
     font-family:"Molend", sans-serif;
     font-size: calc(120*(clamp(40px, 36vw, 580px) / 1080));
     font-style: normal;
@@ -297,6 +297,7 @@ flex-shrink: 0;
     text-decoration-color: transparent;
     transition: text-decoration-color 0.2s;
    color: #BA0000;
+   white-space: nowrap;
 }
 .content-wrapper .content .link:hover{
     text-decoration-color: var(--red);
