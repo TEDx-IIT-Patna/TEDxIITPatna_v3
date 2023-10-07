@@ -76,13 +76,22 @@
 .content-wrapper:nth-child(even) .content{
     margin: 0;
 }
+.content-wrapper.mobile .Title{
+    text-align: center;
+    font-size: 40px;
+    display: inline;
+    
+
+}
 .content-wrapper.mobile .title{
     text-align: center;
+    font-size: 40px;
 }
 .content-wrapper.mobile .graphic{
     position: absolute;
     margin: 0;
     z-index: -1;
+    display: none;
 }
 .content-wrapper.mobile .graphic::before{
     display: none;
