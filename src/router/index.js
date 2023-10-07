@@ -56,7 +56,14 @@ const routes = [
       title: "Roar, 2021"
     },
   },
-
+  {
+    path: '/pastevents/2022',
+    name: 'pastevent_2022',
+    component: () => import(/* webpackChunkName: "pastevent_2021" */ '../views/PastEvents/PastEvent.2022.vue'),
+    meta: {
+      title: "Infinite_affinities, 2022"
+    },
+  },
   {
     path: '/pastevents/2019',
     name: 'pastevent_2019',

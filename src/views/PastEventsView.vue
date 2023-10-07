@@ -8,9 +8,16 @@
     <div class="paintedx"></div>
 
     <div class="pastevents-wrapper">
-      <div class="title">Past Events.</div>
+      <div class="title"> <span style = "color: #FF2B1D;" >Past </span> <span style = "color: #FFF;" >Events</span></div>
+      
 
       <div class="event-scroller">
+        <div class="event">
+          <div class="thumbnail">
+            <router-link to="/pastevents/2022"><img src="@/assets/images/poster-square-2022.png"></router-link>
+          </div>
+          <div class="year">2022</div>
+        </div>
 
         <div class="event">
           <div class="thumbnail">
@@ -43,9 +50,17 @@
     <img src="@/assets/images/Flower-cropped.png" class="flower" style="filter: invert(100%)">
 
     <div class="pastevents-wrapper">
-      <div class="title"><span style="color: white">P</span>ast Events.</div>
+      <div class="title"><span style = "color: #FF2B1D;" >Past </span> <span style = "color: #FFF;" >Events</span></div>
+      <!-- <div class="title-red">Past</div>
+      <div class="title-white">White</div> -->
 
       <div class="event-scroller">
+        <div class="event">
+          <div class="thumbnail">
+            <router-link to="/pastevents/2022"><img src="@/assets/images/poster-square-2022.png"></router-link>
+          </div>
+          <div class="year">2022</div>
+        </div>
 
         <div class="event">
           <div class="thumbnail">

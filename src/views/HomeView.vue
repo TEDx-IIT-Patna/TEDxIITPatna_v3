@@ -1,8 +1,11 @@
 <template>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molend">
   <Nav v-if="!this.showWebView" open_button_style="icon" />
-
+ 
   <!-- web-view landing -->
-  <section class="landing full" v-if="this.showWebView">
+  
+    <!-- <section class="landing full" v-if="this.showWebView">
     <div class="black-bg"></div>
 
     <div class="countdown-container">
@@ -22,10 +25,10 @@
       <img src="@/assets/images/tedxiitpatna_logo-2B.png" class="logo">
       <HomeNav v-if="this.showWebView" />
     </div>
-  </section>
+  </section> -->
 
   <!-- mobile-view landing -->
-  <section class="landing mobile full" v-else>
+  <!--<section class="landing mobile full" v-else>
     <div class="countdown-container">
       <div class="title">Live in</div>
       <div class="countdown">
@@ -39,33 +42,35 @@
     </div>
 
     <img src="@/assets/images/tedxiitpatna_logo-1B.png" class="iitp-logo">
-  </section>
+  </section> -->
 
   <!-- web+mobile view of the theme banner -->
-  <section :class="['theme', 'infaff', this.screenWidth > this.screenHeight * 1.1 ? 'web' : 'mobile']">
+  <!-- <section :class="['theme', 'infaff', this.screenWidth > this.screenHeight * 1.1 ? 'web' : 'mobile']">
     <img src="@/assets/images/infinity-logo.png" class="bg" v-if="this.screenWidth > this.screenHeight * 1.1">
     <img src="@/assets/images/infinity-logo-vertical.png" class="bg" v-else>
     <span class="title">Infinite Affinities</span>
-  </section>
+  </section> -->
 
   <!-- web+mobile view of the contents -->
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     <div class="graphic" id="a">
-      <img src="@/assets/images/hands-red-string.png">
+      <img src="@/assets/images/Prism.png">
     </div>
     <div class="content">
-      <div class="title">Togetherness.</div>
-      <div class="text">We at TEDxIITPatna believe that dreams can become reality when everyone works together. We are
-        an amalgamation of ideas - intertwined by the bonds we share. Through Infinite Affinities, we celebrate unity
-        and the spirit of togetherness. We are human only through the humanity of others. If we are to accomplish
-        anything- it will, in equal measure, be due to the work and achievements of the entire community. We all have a
-        role to play and its vital that our actions inspire others to want to be a part of a better and brighter future.
+      <div class="Title">PRISMS<span class="X" >x</span> OF PERCEPTION </div>
+      <div class="Text">"Prisms of Perception" explores how our view of the world is shaped by various factors,
+         much like light through a prism. It highlights that different individuals have unique perspectives, 
+         and by changing our viewpoint, we can uncover new solutions and ideas, just as a prism reveals a fresh 
+         perspective on light, ultimately fostering innovation and understanding
       </div>
+      <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
+        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a>
     </div>
   </section>
 
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="b"><img src="@/assets/images/question_mark.png"></div>
+    
+    <div class="graphic" id="b"><img src="@/assets/images/Ximage.png"></div>
     <div class="content">
       <div class="title">What is TEDx?</div>
       <div class="text">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program
@@ -79,20 +84,20 @@
   </section>
 
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="c"><img src="@/assets/images/cross_stroke.png"></div>
+    <div class="graphic" id="c"><img src="@/assets/images/prisms_V.png"></div>
     <div class="content">
-      <div class="title">TEDxIITPatna</div>
+      <div class="title">What is TEDxIITPatna?</div>
       <div class="text">Since 2016 TEDxIITPatna has strived to establish momentous and unforgettable events with
-        discussions that have a long-term impact. With a footfall of 1500+ participants in our past events, we have
-        continued to promote creativity and spark conversations even amid a global pandemic.<br><br>
-        As we reach a semblance of normalcy, this year, we present our fourth edition - "Infinite Affinities." We
-        celebrate symbiosis and the independent yet collaborative spirit that allows us to reach new heights. Featuring
-        diverse speakers from various walks of life, we hope to provide an enlightening experience to our community.
+        discussions that have a long-term impact. With a footfall of 1500+ participants in our past events,
+         we have continued to promote creativity and spark conversations even amid a global pandemic.
+         As we reach a semblance of normalcy, this year, we present our fourth edition - "Infinite Affinities."
+          We celebrate symbiosis and the independent yet collaborative spirit that allows us to reach new heights.
+           Featuring diverse speakers from various walks of life, we hope to provide an enlightening experience to our community.
       </div>
-      <router-link to="/about" class="link">About</router-link>
+      <router-link to="/about" class="link">Know More</router-link>
     </div>
   </section>
-
+     
   <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
     <div class="title">Interested in becoming a speaker?</div>
     <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications →</a>
