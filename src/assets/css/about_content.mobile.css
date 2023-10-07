@@ -16,7 +16,8 @@ section.about.mobile{
 }
 
 section.about.mobile .text-wrapper{
-    padding: 25vh 10vw;
+    padding: 10vh 5vw;
+    display: block;
 }
 
 section.about.mobile .text-wrapper .content{
@@ -24,6 +25,7 @@ section.about.mobile .text-wrapper .content{
     left: 50%;
     max-width: 400px;
     transform: translate(-50%, 0);
+    padding: 1rem;
 }
 
 section.about.mobile .text-wrapper .sub-heading,
@@ -35,14 +37,14 @@ section.about.mobile .text-wrapper .heading{
     margin-top: 0;
 }
 
-#more {
+/* #more {
     display: none;
 }
 
 #more2 {
     display: none;
-}
-
+} */
+/* 
 .expand-btn.mobile {
     display: inline-block;
     position: relative;
@@ -73,4 +75,4 @@ section.about.mobile .text-wrapper .heading{
 
 .expand-btn.mobile .down-arrow{
     display: inline;
-}
+} */
