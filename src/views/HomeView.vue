@@ -1,8 +1,16 @@
 <template>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molend">
-  <Nav v-if="!this.showWebView" open_button_style="icon" />
- 
+  <Nav v-if="!this.showWebView" open_button_style="icon" open_button_color="white" />
+  <div class="graphic" style="background-color:#111111">
+    <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:4vh;margin-left:4vh;">
+  </div>
+ <!-- <div class="logo-container">
+      <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;">
+      <HomeNav v-if="this.showWebView" />
+    </div> -->
+    <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
+
   <!-- web-view landing -->
   
     <!-- <section class="landing full" v-if="this.showWebView">
@@ -53,7 +61,13 @@
 
   <!-- web+mobile view of the contents -->
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
+
+     <div class="logo-container">
+      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
+      <HomeNav v-if="this.showWebView" />
+    </div>
     <div class="graphic" id="a">
+      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
       <img src="@/assets/images/Prism.png">
     </div>
     <div class="content">
