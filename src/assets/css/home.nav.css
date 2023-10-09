@@ -2,12 +2,12 @@
 .navbar-web{
     display: flex;
     position: absolute;
-    left: 25vw;
+    left: 15vw;
     bottom: -4vw;
     /* flex-wrap: wrap; */
     flex-shrink:10;
     padding-right: 0vh;
-    margin-left: 10vw;
+    margin-left: 8vw;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -20,12 +20,12 @@
     font-size: 1rem;
     letter-spacing: 0.4rem;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .navbar-web
     {
-        display: flex;
+    display: flex;
     position: absolute;
-    left: 15vw;
+    left: 2vw;
     bottom: -4vw;
     /* flex-wrap: wrap; */
     flex-shrink:10;
