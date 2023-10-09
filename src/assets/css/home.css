@@ -5,8 +5,12 @@
     font-style: normal;
 } */
 
-
-.landing{
+.logo
+{
+    margin-top: 1px;
+}
+.landing
+{
     position: relative;
     background-color:#111111;
 }
@@ -21,7 +25,7 @@
 }
 
 .logo-container{
-    display: block;
+    display:block;
     position: absolute;
     top: 12rem;
     transform: translate(0, -50%);
@@ -32,7 +36,7 @@
 }
 .logo-container .logo {
     height: 150px;
-    margin-left: 1rem
+    margin-left: 2rem
     
 }
 
