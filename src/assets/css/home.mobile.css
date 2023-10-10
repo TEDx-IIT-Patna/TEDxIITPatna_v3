@@ -83,15 +83,19 @@
     
 
 }
-.content-wrapper.mobile .title{
+.content-wrapper.mobile .title
+{
+    margin-left: 20px;
+    margin-top: 350px;
     text-align: center;
     font-size: 40px;
 }
 .content-wrapper.mobile .graphic{
     position: absolute;
     margin: 0;
-    z-index: -1;
-    display: none;
+    z-index:0;
+    display:flex;
+    flex-direction:column;
 }
 .content-wrapper.mobile .graphic::before{
     display: none;
@@ -105,6 +109,7 @@
 }
 .content-wrapper.mobile .graphic img{
     opacity: 0.2;
+    margin-top: 100px;
 }
 
 /* speaker application button */
