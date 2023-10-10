@@ -3,12 +3,80 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molend">
   <div class="graphic" style="background-color:#111111">
     <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:4vh;margin-left:4vh;"> -->
-    <Nav :open_button_color="this.showWebView ? 'white' : 'black'" open_button_style="text" />
+    <Nav :open_button_color="this.showWebView ? 'white' : 'white'" open_button_style="text" />
     <BackButton />
   </div>
   <!-- <Nav :open_button_color="this.showWebView ? 'white' : 'black'" open_button_style="text" />
   <BackButton /> -->
   <!-- web+mobile view of the contents -->
+  <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
+    <div class="graphic" id="a">
+      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
+      <img src="@/assets/images/ANISH.png">
+    </div>
+    <div class="content">
+      <div class="title">ANISH<span class="X" ></span> MALPANI </div>
+      <div class="Text">"Anish Malpani is a social entrepreneur and a spoken word artist who is the founder of Ashaya, 
+        a start-up that transforms multi-layered plastic waste into high-quality products. He left his lucrative job in the US and returned 
+        to India to work with waste pickers for a social cause. He has a BBA degree from the University of Texas and has over 9 years of experience
+         in finance, operations, data and the social impact space across three continents. He launched Ashaya in 2021 and developed
+        a patent-pending technology to extract materials from multi-layered plastic waste, such as chips packets.
+      </div>
+      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
+        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
+    </div>
+  </section>
+    
+  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
+            <div class="title">Register for the session 1</div>
+    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
+  </section>
+  <hr style="background-color:black;border:none;height:2px;">
+      <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
+    <div class="graphic" id="a">
+      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
+      <img src="@/assets/images/Shikhar.png">
+    </div>
+    <div class="content">
+      <div class="title">SHIKHAR<span class="X" ></span> GOEL </div>
+      <div class="Text">"Shikhar Goel's outstanding track record in crafting groundbreaking products showcases his unmatched ability
+         to innovate. As one of the brilliant minds behind the inception of GeeksforGeeks, he has consistently exhibited a forward- thinking 
+         mindset and an unwavering dedication to achieving excellence. Through his visionary leadership, Shikhar has played a pivotal role 
+         in transforming GeeksforGeeks into the ultimate hub for coding enthusiasts across the globe, a testament to his remarkable leadership 
+         and passion for the field.
+      </div>
+      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
+        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
+    </div>
+  </section>
+  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
+            <div class="title">Register for the session 1</div>
+    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
+  </section>
+<hr style="background-color:black;border:none;height:2px;">
+    <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
+    <div class="graphic" id="a">
+      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
+      <img src="@/assets/images/Deepti.png">
+    </div>
+    <div class="content">
+      <div class="title">DEEPTI<span class="X" ></span> ASTHANA</div>
+      <div class="Text">"Deepti Asthana is
+        an independent photographer, film-maker, educator and National Geographic Explorer. Her work focuses on gender 
+        and environmental issues in traditional societies of India. Her keen interest in slow and long form documentary 
+        photography allows her in- depth access into the lives of the people she photographs. In the year 2020, Deepti was 
+        awarded by World Press Photo under their Global Talent 6*6 program. Deepti is currently documenting the water crisis 
+        in Western Himalayas and how it impacts lives of young women. Her project is supported by The National Geographic Society.
+      </div>
+      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
+        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
+    </div>
+  </section>
+  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
+            <div class="title">Register for the session 2</div>
+    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
+  </section>
+    <hr style="background-color:black;border:none;height:2px;">
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     <div class="graphic" id="a">
       <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
@@ -28,6 +96,11 @@
         rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
     </div>
   </section>
+  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
+        <div class="title">Register for the session 2</div>
+    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
+  </section>
+  <hr style="background-color:black;border:none;height:2px;">
 
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     <div class="graphic" id="a">
@@ -48,58 +121,14 @@
         rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
     </div>
   </section>
-    <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/Deepti.png">
-    </div>
-    <div class="content">
-      <div class="title">DEEPTI<span class="X" ></span> ASTHANA</div>
-      <div class="Text">"Deepti Asthana is
-        an independent photographer, film-maker, educator and National Geographic Explorer. Her work focuses on gender 
-        and environmental issues in traditional societies of India. Her keen interest in slow and long form documentary 
-        photography allows her in- depth access into the lives of the people she photographs. In the year 2020, Deepti was 
-        awarded by World Press Photo under their Global Talent 6*6 program. Deepti is currently documenting the water crisis 
-        in Western Himalayas and how it impacts lives of young women. Her project is supported by The National Geographic Society.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
+  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
+            <div class="title">Register for the session 2</div>
+    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
   </section>
-    <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/ANISH.png">
-    </div>
-    <div class="content">
-      <div class="title">ANISH<span class="X" ></span> MALPANI </div>
-      <div class="Text">"Anish Malpani is a social entrepreneur and a spoken word artist who is the founder of Ashaya, 
-        a start-up that transforms multi-layered plastic waste into high-quality products. He left his lucrative job in the US and returned 
-        to India to work with waste pickers for a social cause. He has a BBA degree from the University of Texas and has over 9 years of experience
-         in finance, operations, data and the social impact space across three continents. He launched Ashaya in 2021 and developed
-        a patent-pending technology to extract materials from multi-layered plastic waste, such as chips packets.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
-  </section>
-    <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/Shikhar.png">
-    </div>
-    <div class="content">
-      <div class="title">SHIKHAR<span class="X" ></span> GOEL </div>
-      <div class="Text">"Shikhar Goel's outstanding track record in crafting groundbreaking products showcases his unmatched ability
-         to innovate. As one of the brilliant minds behind the inception of GeeksforGeeks, he has consistently exhibited a forward- thinking 
-         mindset and an unwavering dedication to achieving excellence. Through his visionary leadership, Shikhar has played a pivotal role 
-         in transforming GeeksforGeeks into the ultimate hub for coding enthusiasts across the globe, a testament to his remarkable leadership 
-         and passion for the field.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
-  </section>
+ <hr style="background-color:black;border:none;height:2px;">
+
+    
+     <hr style="background-color:black;border:none;height:2px;">
 
   <Footer />
 </template>
