@@ -15,7 +15,7 @@
     transform-origin: 0 100%;
     transform:  translate(0, calc(-100% - 8rem));
     
-    font-family:'Roboto Flex';
+    font-family:'Poppins';
     font-weight: 520;
     font-size: 1rem;
     letter-spacing: 0.4rem;
@@ -38,7 +38,7 @@
     transform-origin: 0 100%;
     transform:  translate(0, calc(-100% - 8rem));
     
-    font-family:"Roboto Flex";
+    font-family:'Poppins';
     font-weight: 500;
     font-size: 1rem;
     letter-spacing: 0.4rem;
