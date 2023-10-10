@@ -108,6 +108,7 @@
     opacity: 0.6;
 }
 .content-wrapper.mobile .graphic img{
+    width:100%;
     opacity: 0.2;
     margin-top: 100px;
 }
