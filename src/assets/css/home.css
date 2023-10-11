@@ -123,7 +123,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    padding: 5% 15%;
+    padding: 5% 10%;
     background-color: #111111;
     /* border: 1px solid red; */
 }
@@ -183,8 +183,19 @@
 height: 630.524px;
 min-width:230px;
 flex-shrink: 0;
-
 }
+
+/* Create a media screen for mobile view */
+@media only screen and (max-width:500px){
+    .content-wrapper .graphic#a img {
+            margin-bottom: 200px;
+            max-width: 590.8px;
+            height: auto;
+            min-width: 230px;
+            flex-shrink: 0;
+        }
+}
+
 .content-wrapper .graphic#b img{
     width: 50vw;
     max-width: 500px;
@@ -207,6 +218,7 @@ flex-shrink: 0;
 }
 .content-wrapper .content{
     margin: 0 2rem 0 4rem;
+    text-align: justify;
 }
 .content-wrapper .content .Title{
     

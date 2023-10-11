@@ -36,10 +36,10 @@
         <NavLinks />
       </div>
 
-      <div class="misc-links">
+      <!-- <div class="misc-links">
         <a href="#" class="link">Subscribe to our<br>mailing list!</a>
         <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications</a>
-      </div>
+      </div> -->
 
       <div class="socials">
         <a href="mailto:tedxiitpatna@gmail.com" class="email">tedxiitpatna@gmail.com</a>
