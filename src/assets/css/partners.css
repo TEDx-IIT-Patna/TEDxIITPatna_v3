@@ -64,7 +64,7 @@
     justify-items: center;
     align-items: center;
     transform: translate(-50%, 0);
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
     overflow-x: auto;
     overflow-y: hidden;
 }
