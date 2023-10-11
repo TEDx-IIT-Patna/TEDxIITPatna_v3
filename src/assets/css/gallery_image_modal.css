@@ -30,7 +30,7 @@
 
 .image {
     width: 90vw;
-    height: calc(9/16 * 90vw);
+    /* height: calc(9/16 * 90vw); */
     max-height: 80vh;
     background-size: contain;
     background-position: center;
