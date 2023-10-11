@@ -66,7 +66,7 @@
       <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
       <HomeNav v-if="this.showWebView" />
     </div>
-    <div class="graphic" id="a">
+    <div class="graphic check" id="a">
       <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
       <img src="@/assets/images/Prism.png">
     </div>
