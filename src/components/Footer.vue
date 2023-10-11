@@ -28,7 +28,7 @@
   <!-- <img src="@/assets/images/footerimg.png" class="footer-img"> -->
   <footer class="footer">
     <div class="logo">
-      <img src="@/assets/images/tedxiitpatna_logo-1W.png">
+      <img src="@/assets/images/newlogo.png">
     </div>
 
     <div class="left-wrapper">

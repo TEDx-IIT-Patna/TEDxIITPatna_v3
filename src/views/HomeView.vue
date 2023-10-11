@@ -30,7 +30,7 @@
 
     <div class="logo-container">
       <img src="@/assets/images/barcode.png" class="barcode">
-      <img src="@/assets/images/tedxiitpatna_logo-2B.png" class="logo">
+      <img src="@/assets/images/tedx iitpatna_logo-2B.png" class="logo">
       <HomeNav v-if="this.showWebView" />
     </div>
   </section> -->
@@ -49,7 +49,7 @@
       <img src="@/assets/images/cross_stroke.png">
     </div>
 
-    <img src="@/assets/images/tedxiitpatna_logo-1B.png" class="iitp-logo">
+    <img src="@/assets/images/tedx iitpatna_logo-1B.png" class="iitp-logo">
   </section> -->
 
   <!-- web+mobile view of the theme banner -->
@@ -89,7 +89,7 @@
       <div class="title">What is TEDx?</div>
       <div class="text">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program
         of local, self-organized events that bring people together to share a TED-like experience. Our event is called
-        TEDxIITPatna, where x = independently organized TED event. At our TEDxIITPatna event, TED Talks video and live
+        TEDx IITPatna, where x = independently organized TED event. At our TEDx IITPatna event, TED Talks video and live
         speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides
         general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</div>
       <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="link"
@@ -100,8 +100,8 @@
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     <div class="graphic" id="c"><img src="@/assets/images/prisms_V.png"></div>
     <div class="content">
-      <div class="title">What is TEDx IITPatna?</div>
-      <div class="text">Since 2016 TEDxIITPatna has strived to establish momentous and unforgettable events with
+      <div class="title">What is Tedx IITPatna?</div>
+      <div class="text">Since 2016 TEDx IITPatna has strived to establish momentous and unforgettable events with
         discussions that have a long-term impact. With a footfall of 1500+ participants in our past events,
          we have continued to promote creativity and spark conversations even amid a global pandemic.
          As we reach a semblance of normalcy, this year, we present our fourth edition - "Infinite Affinities."

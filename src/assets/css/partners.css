@@ -6,6 +6,11 @@
     overflow: hidden;
 }
 
+#app{
+    background-color: black;
+    color: white;
+}
+
 .wrapper .logo {
     position: fixed;
     left: 2vw;
