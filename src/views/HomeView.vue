@@ -100,7 +100,7 @@
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     <div class="graphic" id="c"><img src="@/assets/images/prisms_V.png"></div>
     <div class="content">
-      <div class="title">What is TEDxIITPatna?</div>
+      <div class="title">What is TEDx IITPatna?</div>
       <div class="text">Since 2016 TEDxIITPatna has strived to establish momentous and unforgettable events with
         discussions that have a long-term impact. With a footfall of 1500+ participants in our past events,
          we have continued to promote creativity and spark conversations even amid a global pandemic.

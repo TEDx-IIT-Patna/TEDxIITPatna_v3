@@ -2,34 +2,34 @@
 .navbar-web{
     display: flex;
     position: absolute;
-    left: 25vw;
-    bottom: -4vw;
-    /* flex-wrap: wrap; */
-    flex-shrink:10;
-    padding-right: 0vh;
-    margin-left: 10vw;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* border: 1px solid red; */
-    transform-origin: 0 100%;
-    transform:  translate(0, calc(-100% - 8rem));
-    
-    font-family:'Roboto Flex';
-    font-weight: 520;
-    font-size: 1rem;
-    letter-spacing: 0.4rem;
-}
-@media screen and (max-width: 1300px) {
-    .navbar-web
-    {
-        display: flex;
-    position: absolute;
     left: 15vw;
     bottom: -4vw;
     /* flex-wrap: wrap; */
     flex-shrink:10;
     padding-right: 0vh;
+    margin-left: 8vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    transform-origin: 0 100%;
+    transform:  translate(0, calc(-100% - 8rem));
+    
+    font-family:'Poppins';
+    font-weight: 520;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+}
+@media screen and (max-width: 1400px) {
+    .navbar-web
+    {
+    display: flex;
+    position: absolute;
+    left: 2vw;
+    bottom: -4vw;
+    /* flex-wrap: wrap; */
+    flex-shrink:10;
+    padding-right: 0vh;
     margin-left: 10vw;
     flex-direction: row;
     justify-content: flex-start;
@@ -38,7 +38,7 @@
     transform-origin: 0 100%;
     transform:  translate(0, calc(-100% - 8rem));
     
-    font-family:"Roboto Flex";
+    font-family:'Poppins';
     font-weight: 500;
     font-size: 1rem;
     letter-spacing: 0.4rem;
