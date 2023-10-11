@@ -77,7 +77,7 @@
          and by changing our viewpoint, we can uncover new solutions and ideas, just as a prism reveals a fresh 
          perspective on light, ultimately fostering innovation and understanding
       </div>
-      <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
+      <a href="https://www.youtube.com/watch?v=5Gps8XGdLfQ" target="_blank" class="Link"
         rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a>
     </div>
   </section>
@@ -112,10 +112,10 @@
     </div>
   </section>
      
-  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
+  <!-- <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
     <div class="title">Interested in becoming a speaker?</div>
     <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications →</a>
-  </section>
+  </section> -->
 
   <Footer />
 </template>

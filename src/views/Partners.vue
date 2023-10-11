@@ -53,17 +53,11 @@ export default {
       showWebView: window.innerWidth >= 830,
       partners: {
         "Sponsors": [
-          require('@/assets/images/partners/new_partners/BridgeLabz.png'),
-          require('@/assets/images/partners/new_partners/BlueMedix.png'),
-        ],
-        "Merchandise Partners": [
-          require('@/assets/images/partners/new_partners/printiconics.png'),
-        ],
-        "Media Partners": [
-          require('@/assets/images/partners/new_partners/DainikJagran.jpg'),
-        ],
-        "Hospitality Partners": [
-          require('@/assets/images/partners/new_partners/amalfi.png'),
+          require('@/assets/images/partners/new_partners/BSPHCL.png'),
+          require('@/assets/images/partners/new_partners/Indian Oil.png'),
+          require('@/assets/images/partners/new_partners/Mello.jpeg'),
+          require('@/assets/images/partners/new_partners/sp.jpeg'),
+          require('@/assets/images/partners/new_partners/sp2.jpeg'),
         ],
         "Our Previous Partners": [
           require('@/assets/images/partners/anton paar_ silver .jpg'),
@@ -80,7 +74,12 @@ export default {
           require('@/assets/images/partners/4.png'),
           require('@/assets/images/partners/varta.png'),
           require('@/assets/images/partners/ic.png'),
-          require('@/assets/images/partners/pataliputra.png',)
+          require('@/assets/images/partners/pataliputra.png'),
+          require('@/assets/images/partners/BridgeLabz.png'),
+          require('@/assets/images/partners/BlueMedix.png'),
+          require('@/assets/images/partners/printiconics.png'),
+          require('@/assets/images/partners/DainikJagran.jpg'),
+          require('@/assets/images/partners/amalfi.png'),
         ]
       },
     }
