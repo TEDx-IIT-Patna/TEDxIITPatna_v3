@@ -46,7 +46,7 @@
     z-index: -1;
 }
 .wrapper.mobile .partners-images{
-    margin: 1vw 0;
+    padding: 1vw;
 }
 
 .wrapper.mobile .partners-images .thumbnail{
