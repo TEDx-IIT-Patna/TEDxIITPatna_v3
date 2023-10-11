@@ -183,10 +183,10 @@ export default {
         "PIC": [
           {
             index: "0",
-            Name: "Dr. S.K. Samanta",
+            Name: "Dr. Anilkumar Bachu",
             Post: "Professor-In-Charge",
             Roll: "",
-            Path: require('@/assets/images/Team_Image/prof.png'),
+            Path: require('@/assets/images/Team_Image/PIC1.jpeg'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/sujoy-kumar-samanta-a0bb91238/", "fa-linkedin-in"],
             },
@@ -263,6 +263,16 @@ export default {
             Post: "Co-ordinator",
             Roll: "2101MC55",
             Path: require('@/assets/images/Team_Image/spons2.jpeg'),
+            Socials: {
+              Linkedin: ["https://www.linkedin.com/in/athul-krishna-k-688262223/", "fa-linkedin-in"],
+            },
+          },
+          {
+            index: "30",
+            Name: "Deepanker Jauhari",
+            Post: "Co-ordinator",
+            Roll: "2101MC55",
+            Path: require('@/assets/images/Team_Image/spons3.jpg'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/athul-krishna-k-688262223/", "fa-linkedin-in"],
             },

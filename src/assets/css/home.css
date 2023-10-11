@@ -280,9 +280,6 @@ flex-shrink: 0;
     text-decoration-color: transparent;
     background-color: #BA0000;
 }
-.content-wrapper .content .Link img{
-   margin-left: 10px;
-}
 
 .content-wrapper .content .link{
     display: inline-block;
