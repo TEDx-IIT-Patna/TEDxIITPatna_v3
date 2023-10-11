@@ -106,6 +106,9 @@
 .content-wrapper.mobile .Links{
     margin-top: 2rem;
 }
+.content-wrapper.mobile .graphic#c img{
+    margin-left: 50px;
+}
 
 .content-wrapper.mobile .graphic::before{
     display: none;
