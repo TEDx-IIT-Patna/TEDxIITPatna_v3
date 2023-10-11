@@ -3,6 +3,7 @@ section.about.mobile{
 }
 
 .section-title.mobile{
+    /* opacity: 0; */
     right: auto;
     left: 0;
     width: 100vw;
@@ -10,6 +11,14 @@ section.about.mobile{
     font-size: calc(400 * (60vh / 1080));
     background-color: transparent;
 }
+
+/* Create a media query for the mobile view */
+@media (max-width: 900px){
+    .section-title.mobile{
+        opacity: 0;
+    }
+}
+
 .section-title.mobile span{
     padding-bottom: 5%;
     right: 0.2ch;

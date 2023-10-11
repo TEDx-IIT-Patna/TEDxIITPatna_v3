@@ -195,10 +195,10 @@ export default {
         "Organisers": [
           {
             index: "1",
-            Name: "Harshit Dhankar",
+            Name: "Harshit Dhankhar",
             Post: "Organiser",
             Roll: "2101MC20",
-            Path: require('@/assets/images/Team_Image/ORG1.jpeg'),
+            Path: require('@/assets/images/Team_Image/harshit.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/palak-totala-510875203/", "fa-linkedin-in"],
             },
@@ -208,7 +208,7 @@ export default {
             Name: "Kommalapati Lahari",
             Post: "Co-organiser",
             Roll: "2101CS39",
-            Path: require('@/assets/images/Team_Image/ORG2.jpeg'),
+            Path: require('@/assets/images/Team_Image/lahari.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/nischal-jain-4ab036195/", "fa-linkedin-in"],
             },
@@ -220,7 +220,7 @@ export default {
             Name: "Aryan Dabad",
             Post: "Co-ordinator",
             Roll: "2101AI36",
-            Path: require('@/assets/images/Team_Image/PNC1.jpeg'),
+            Path: require('@/assets/images/Team_Image/aryan.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/pradipti-mondal-3146ac/", "fa-linkedin-in"],
             },
@@ -230,7 +230,7 @@ export default {
             Name: "Siddhant Senapati",
             Post: "Co-ordinator",
             Roll: "2101AI38",
-            Path: require('@/assets/images/Team_Image/PNC2.jpeg'),
+            Path: require('@/assets/images/Team_Image/siddhant.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/ashfaq-iitp/", "fa-linkedin-in"],
             },
@@ -240,7 +240,7 @@ export default {
             Name: "Nishita Lath",
             Post: "Co-ordinator",
             Roll: "2101CS53",
-            Path: require('@/assets/images/Team_Image/PNC3.jpeg'),
+            Path: require('@/assets/images/Team_Image/nishita.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/shaheertanveer/", "fa-linkedin-in"],
             },
@@ -252,7 +252,7 @@ export default {
             Name: "Ankur Kumar",
             Post: "Co-ordinator",
             Roll: "2101EE10",
-            Path: require('@/assets/images/Team_Image/spons1.jpeg'),
+            Path: require('@/assets/images/Team_Image/ankur.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/sai-nandan-panigrahy/", "fa-linkedin-in"],
             },
@@ -262,7 +262,7 @@ export default {
             Name: "Pushkar Raj",
             Post: "Co-ordinator",
             Roll: "2101MC55",
-            Path: require('@/assets/images/Team_Image/spons2.jpeg'),
+            Path: require('@/assets/images/Team_Image/pushkar.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/athul-krishna-k-688262223/", "fa-linkedin-in"],
             },
@@ -272,7 +272,7 @@ export default {
             Name: "Deepanker Jauhari",
             Post: "Co-ordinator",
             Roll: "2101MC55",
-            Path: require('@/assets/images/Team_Image/spons3.jpg'),
+            Path: require('@/assets/images/Team_Image/deepankar.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/athul-krishna-k-688262223/", "fa-linkedin-in"],
             },
@@ -284,7 +284,7 @@ export default {
             Name: "Mukund",
             Post: "Co-ordinator",
             Roll: "2101AI19",
-            Path: require('@/assets/images/Team_Image/PROD1.jpeg'),
+            Path: require('@/assets/images/Team_Image/mukund.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/devna-srivastava-58040621a/", "fa-linkedin-in"],
             },
@@ -294,7 +294,7 @@ export default {
             Name: "Shruti Dey",
             Post: "Prod",
             Roll: "2101CE53",
-            Path: require('@/assets/images/Team_Image/PROD2.jpeg'),
+            Path: require('@/assets/images/Team_Image/shruti.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/abhimanyu-singh-bisht-91b3b0200/", "fa-linkedin-in"],
             },
@@ -304,7 +304,7 @@ export default {
             Name: "Arkadeep",
             Post: "Co-ordinator",
             Roll: "2101AI41",
-            Path: require('@/assets/images/Team_Image/PROD3.jpeg'),
+            Path: require('@/assets/images/Team_Image/arkadeep.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/yash-ajitsaria-0b56a11bb/", "fa-linkedin-in"],
             },
@@ -316,7 +316,7 @@ export default {
             Name: "Anurag Deo",
             Post: "Co-ordinator",
             Roll: "2101AI04",
-            Path: require('@/assets/images/Team_Image/WEB1.jpeg'),
+            Path: require('@/assets/images/Team_Image/anurag.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/pratyushkumar1032/", "fa-linkedin-in"],
             },
@@ -328,7 +328,7 @@ export default {
             Name: "Yashveer",
             Post: "Co-ordinator",
             Roll: "2101AI35",
-            Path: require('@/assets/images/Team_Image/RSP1.jpeg'),
+            Path: require('@/assets/images/Team_Image/yashveer.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/abhinav2901/", "fa-linkedin-in"],
             },
@@ -338,7 +338,7 @@ export default {
             Name: "Avnish",
             Post: "Co-ordinator",
             Roll: "2101EE85",
-            Path: require('@/assets/images/Team_Image/RSP2.jpeg'),
+            Path: require('@/assets/images/Team_Image/avnish.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/mln-keertana-5aab50217/", "fa-linkedin-in"],
             },
@@ -350,7 +350,7 @@ export default {
             Name: "Anudeep",
             Post: "Co-ordinator",
             Roll: "2101AI43",
-            Path: require('@/assets/images/Team_Image/MPR1.jpeg'),
+            Path: require('@/assets/images/Team_Image/anudeep.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/hardiktiwari/", "fa-linkedin-in"],
             },
@@ -360,7 +360,7 @@ export default {
             Name: "Kirtan",
             Post: "Co-ordinator",
             Roll: "2101CS38",
-            Path: require('@/assets/images/Team_Image/MPR2.jpeg'),
+            Path: require('@/assets/images/Team_Image/kirtan.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/aarav-arya-b80909239/", "fa-linkedin-in"],
             },
@@ -370,7 +370,7 @@ export default {
             Name: "Abhilasha",
             Post: "Co-ordinator",
             Roll: "2101CB02",
-            Path: require('@/assets/images/Team_Image/MPR3.jpeg'),
+            Path: require('@/assets/images/Team_Image/abhilasha.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/aarav-arya-b80909239/", "fa-linkedin-in"],
             },
@@ -382,7 +382,7 @@ export default {
         //     Name: "Khushi Shah",
         //     Post: "Co-ordinator",
         //     Roll: "2001EE91",
-        //     Path: require('@/assets/images/Team_Image/12.jpeg'),
+        //     Path: require('@/assets/images/Team_Image/12.png'),
         //     Socials: {
         //       Linkedin: ["https://www.linkedin.com/in/khushishah8221/", "fa-linkedin-in"],
         //     },
@@ -393,17 +393,17 @@ export default {
             Name: "Mamta",
             Post: "Co-ordinator",
             Roll: "2101CS42",
-            Path: require('@/assets/images/Team_Image/HOSP1.jpeg'),
+            Path: require('@/assets/images/Team_Image/mamta.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/vani-grover-77078a207/", "fa-linkedin-in"],
             },
           },
           {
             index: "12",
-            Name: "Nishita",
+            Name: "Nishtha",
             Post: "Co-ordinator",
             Roll: "2101CS89",
-            Path: require('@/assets/images/Team_Image/HOSP2.jpeg'),
+            Path: require('@/assets/images/Team_Image/nishtha.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/khushishah8221/", "fa-linkedin-in"],
             },
@@ -415,7 +415,7 @@ export default {
             Name: "Varesh",
             Post: "Co-ordinator",
             Roll: "2101MM37",
-            Path: require('@/assets/images/Team_Image/DES1.jpeg'),
+            Path: require('@/assets/images/Team_Image/varesh.png'),
             Socials: {
               Linkedin: ["https://www.linkedin.com/in/farhaan-alam/", "fa-linkedin-in"],
             },
@@ -426,7 +426,7 @@ export default {
         //     Name: "Deepshikha",
         //     Post: "Convener",
         //     Roll: "2001MM15",
-        //     Path: require('@/assets/images/Team_Image/21.jpeg'),
+        //     Path: require('@/assets/images/Team_Image/21.png'),
         //     Socials: {
         //       Linkedin: ["https://www.linkedin.com/in/deepshikha-1234/", "fa-linkedin-in"],
         //     },
@@ -436,7 +436,7 @@ export default {
         //     Name: "Sajal Kumar",
         //     Post: "Convener",
         //     Roll: "2001ME01",
-        //     Path: require('@/assets/images/Team_Image/22.jpeg'),
+        //     Path: require('@/assets/images/Team_Image/22.png'),
         //     Socials: {
         //       Linkedin: ["https://www.linkedin.com/in/sajalkumar247/", "fa-linkedin-in"],
         //     },
