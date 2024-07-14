@@ -1,7 +1,14 @@
 <template>
-  <Nav open_button_color="white" open_button_style="icon" />
+ 
 
-  <BackButton />
+ <div class="graphic" >
+  <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
+  </div>
+ 
+  <div class="logo-container">
+      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
+      <HomeNav/>
+    </div>
   
   <img src="@/assets/images/tedxiitpatna_logo-2W.png" class="logo watermark"
     v-if="this.screenWidth > 1100 && this.screenWidth > this.screenHeight * 1.3">
@@ -13,8 +20,8 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title">Metamorphosis</div>
-      <div class="year">2019</div>
+      <div class="title"  style="display: flex;">Metamorphosis <div class="year" style="  align-content: end ;">(2019)</div></div>
+     
       <div class="intro">The 2nd Edition of TEDxIITPatna, Metamorphosis, put forth the ideology that permanence is an
         illusion, and everything in this universe is susceptible to change. Change is not always bad- it often brings
         opportunities to transform into something better. While change is inevitable, it is upon us to grow and adapt to
@@ -26,7 +33,7 @@
 
   <section class="speakers-wrapper full">
     <div class="content">
-      <div class="title">Speakers.</div>
+      <div class="title" style="background-image: linear-gradient(90deg, #EE0028 0%, #FFFFFF 57.37%) ; -webkit-background-clip: text; color: transparent;">Speakers</div>
       <div class="speakers">
         <div class="speaker" v-for="speaker in this.speakerDetails" :key="speaker" @click="this.configureSpeakerModal(speaker)">
           <img :src="speaker.imageSrc">
@@ -37,7 +44,7 @@
 
   <section class="gallery-wrapper full">
     <div class="content">
-      <div class="title">Gallery.</div>
+      <div class="title" style="background-image: linear-gradient(90deg, #EE0028 0%, #FFFFFF 57.37%) ; -webkit-background-clip: text; color: transparent;left: 13%;">Gallery</div>
       <div class="gallery">
         <div class="gallery-image" v-for="i in 16" @click="this.configureImageModal(i)">
           <img :src="require(`@/assets/past-events/gallery-images/2019/${i}.png`)">
@@ -66,8 +73,10 @@
 import Nav from '@/components/Nav.vue'
 // import Footer from '@/components/Footer.vue'
 import BackButton from '@/components/BackButton.vue'
+import HomeNav from '@/components/Home.Nav.vue'
 import ImageModal from '@/components/GalleryImageModal.vue'
 import SpeakerModal from '@/components/SpeakerDetailModal.vue'
+
 
 export default {
   name: "PastEventsView.2019",
@@ -77,6 +86,7 @@ export default {
     BackButton,
     ImageModal,
     SpeakerModal,
+    HomeNav,
   },
   data() {
     return {
@@ -174,6 +184,12 @@ export default {
 
 <style scoped>
 @import '@/assets/css/past_events.common.css';
+@import '@/assets/css/home.css';
+.theme-bg{
+  background-image: url('/src/assets/images/Frame40.png');
+}
+
+
 
 .intro-wrapper .title{
   word-break: break-word;
@@ -182,4 +198,5 @@ export default {
     transform: translate(2%, -50%);
     opacity: 0.6;
 }
+
 </style>
