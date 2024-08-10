@@ -1,4 +1,6 @@
 <template>
+    <Nav v-if="!this.showWebView" open_button_style="icon" open_button_color="white" />
+  
 
 
 <div class="graphic" >
@@ -7,7 +9,7 @@
  
   <div class="logo-container">
       <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
-      <HomeNav/>
+      <HomeNav v-if="this.showWebView" style="left: 33.5vw;"/>
     </div>
   
 
@@ -102,6 +104,7 @@ export default {
     return {
       screenWidth: window.innerWidth,
       screenHeight: window.innerHeight,
+      showWebView: window.innerWidth >= (1.51 * window.innerHeight),
 
       showImageModal: false,
       imageModalSrc: null,
@@ -156,6 +159,7 @@ export default {
     onResize() {
       this.screenWidth = window.innerWidth
       this.screenHeight = window.innerHeight
+      this.showWebView = window.innerWidth >= (1.51 * window.innerHeight)
     },
     configureImageModal(i) {
       this.imageModalSrc = require(`@/assets/past-events/gallery-images/2016/${i}.jpg`)

@@ -2,9 +2,10 @@
 .navbar-web{
     display: flex;
     position: absolute;
-    left: 33.5vw;
 
-    bottom: -6vw;
+  left: 25vw;    
+
+   
     /* flex-wrap: wrap; */
     flex-shrink:10;
     padding-right: 0vh;
