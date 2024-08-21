@@ -28,10 +28,11 @@
   <!-- <img src="@/assets/images/footerimg.png" class="footer-img"> -->
   <footer class="footer">
     <div class="logo">
-      <img src="@/assets/images/newlogo.png">
+      <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
     </div>
+   
 
-    <div class="left-wrapper">
+    <div class="left-wrapper" style="display: flex;">
       <div class="nav-links">
         <NavLinks />
       </div>
@@ -41,9 +42,12 @@
         <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications</a>
       </div> -->
 
-      <div class="socials">
-        <a href="mailto:tedxiitpatna@gmail.com" class="email">tedxiitpatna@gmail.com</a>
+      <div class="socials" style=" margin-left:10rem;">
+        <span style="font-size: 24px;"> Social media handles </span>
+        
         <div class="links">
+
+          
           <a href="https://www.instagram.com/tedxiitpatna/" target="_blank" class="link">
             <img src="@/assets/icons/instagram-icon-black.png" class="icon">
             <div class="name">@tedxiitpatna</div>
@@ -61,6 +65,7 @@
             <div class="name">TEDxIITPatna</div>
           </a>
         </div>
+        <a href="mailto:tedxiitpatna@gmail.com" class="email">tedxiitpatna@gmail.com</a>
 
       </div>
     </div>

@@ -63,6 +63,7 @@
     margin-top: 2rem;
     transition: color 0.2s;
     text-transform: uppercase;
+    
 }
 .navbar-web a:after{
     content: '';

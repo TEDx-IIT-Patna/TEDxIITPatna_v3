@@ -46,7 +46,7 @@ footer .Map {
 }
 
 footer .Map iframe {
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
     max-width: 500px;
     aspect-ratio: 16 / 9;
@@ -158,8 +158,10 @@ footer .socials .link:hover .name {
 
 footer .disclaimer {
     grid-area: disclaimer;
-    text-align: center;
-    padding: 5%;
+    font-size: 19px;
+
+    padding: 2%;
+    margin-left:-2rem ;
     text-transform: capitalize;
 }
 
