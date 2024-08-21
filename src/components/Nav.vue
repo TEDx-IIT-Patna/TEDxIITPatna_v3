@@ -84,5 +84,5 @@ export default {
 </script>
 
 <style scoped>
-@import '@/assets/css/nav.css';
+  @import '@/assets/css/nav.css';
 </style>
