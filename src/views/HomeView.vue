@@ -88,7 +88,7 @@
         of local, self-organized events that bring people together to share a TED-like experience. Our event is called
         TEDx IITPatna, where x = independently organized TED event. At our TEDx IITPatna event, TED Talks video and live
         speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides
-        general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</div>
+        general guidance for the TEDx program, but individual TEDx events , including ours, are self-organized.</div>
       <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="link"
         rel="noopener noreferrer" >More about TEDx Program</a>
     </div>
