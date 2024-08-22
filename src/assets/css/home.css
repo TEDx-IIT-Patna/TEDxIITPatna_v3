@@ -240,6 +240,9 @@ flex-shrink: 0;
     }
 .content-wrapper .content .title{
     text-align: left;
+   
+    line-height: 1.2;
+    
     max-width: 600px;
     font-size: calc(120 * (clamp(40px, 36vw, 580px) / 1080));
     font-weight: 600;
@@ -301,13 +304,19 @@ flex-shrink: 0;
 .Title-ver{
     display: flex;
     
-    font-size: 100px;
-    max-width: 577px;
-    position:relative;
+    
+    justify-content: center;
+    text-align: center;
+   
+    
+   
     color: #FFF;
     text-align: center;
     font-family:"Molend", sans-serif;
-   
+    width: 100%;
+    height: auto;
+    
+    object-fit: cover;
     font-style: normal;
     
      line-height: 95.2%; /* 75.46px */
@@ -433,3 +442,56 @@ footer{
 body {
     overflow-x: hidden;
   }
+
+
+  .veiled{
+  
+   display: block;
+    
+    
+   justify-content: center;
+   text-align: center;
+  
+   
+  
+   color: #FFF;
+ 
+   font-family:"Molend", sans-serif;
+   width: 100%;
+   height: 50%;
+   overflow-clip-margin: content-box;
+   overflow: clip;
+   
+ 
+   font-style: normal;
+   
+   
+
+  }
+  @media only screen and (max-width:500px){
+    .content-wrapper .gra img {
+            margin-bottom: 200px;
+            max-width: 590.8px;
+           
+            height: auto;
+            min-width: 230px;
+            
+            flex-shrink: 0;
+        }
+}
+
+ .gra img{
+    width: 90%;
+    margin-left: 2rem;
+ 
+   
+    height: auto;
+    min-width: 200px;
+ 
+    display: grid;
+    place-items: center;
+}
+.center{
+    display: grid;
+    place-items: center;
+}

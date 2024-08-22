@@ -6,6 +6,10 @@
   <div class="graphic" >
     <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
   </div>
+  <div class="logo-container">
+      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
+      <HomeNav v-if="this.showWebView" style="left: 33.5vw;"/>
+    </div>
   
  <!-- <div class="logo-container">
       <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;">
@@ -63,21 +67,11 @@
 
   <!-- web+mobile view of the contents -->
    
-  <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']"  >
-
-     <div class="logo-container" >
-      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
-      <HomeNav v-if="this.showWebView" />
-    </div>
-    
-    
-  
-   
+ 
+  <div class="center">
       
-      <div class="Title-ver" style="margin-left:16% ;"> <span class="X" ><img src="@/assets/images/TEXT.png"></span></div>
-     
-  
-  </section>
+      <div class="gra" id="b" style=""> <img src="@/assets/images/TEXT.png"></div>
+    </div>
 
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     

@@ -42,7 +42,7 @@
         <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications</a>
       </div> -->
 
-      <div class="socials" style=" margin-left:10rem;">
+      <div class="socials" >
         <span style="font-size: 24px;"> Social media handles </span>
         
         <div class="links">

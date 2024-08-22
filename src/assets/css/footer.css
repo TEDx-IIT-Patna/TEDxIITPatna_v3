@@ -98,6 +98,7 @@ footer .socials {
     grid-area: socials;
     display: flex;
     padding: 1rem;
+    margin-left: 6rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -171,14 +172,20 @@ footer .disclaimer {
         grid-template-areas:
             "logo logo"
             "map map"
-            "links links"
+            "links links "
             "disclaimer disclaimer"
         ;
         padding: 0 5%;
+        coloumn-gap:rem;
+       place-items: center;
         place-content: center;
     }
     footer .Map {
         justify-content: center;
+        width: 80%;
+       
+        
+       
     }
     footer .Map iframe {
         width: 90%;
@@ -189,14 +196,22 @@ footer .disclaimer {
     }
     footer .left-wrapper {
         margin-top: 3rem;
-        grid-template-columns: auto auto;
+       
+        width: 30%;
         place-content: center;
+      
+        
     }
     footer .nav-links {
         align-items: flex-end;
         text-align: right;
+     
+       
     }
     footer .socials {
-        align-items: center;
+     margin-left: 2rem;
+
+        
+       
     }
 }
