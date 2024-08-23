@@ -1,10 +1,16 @@
 <template>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molend">
+  <div class="theme-bg">
   <Nav v-if="!this.showWebView" open_button_style="icon" open_button_color="white" />
-  <div class="graphic" style="background-color:#111111">
-    <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:4vh;margin-left:4vh;">
+  <div class="graphic" >
+    <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
   </div>
+  <div class="logo-container">
+      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
+      <HomeNav v-if="this.showWebView" style="left: 33.5vw;"/>
+    </div>
+  
  <!-- <div class="logo-container">
       <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;">
       <HomeNav v-if="this.showWebView" />
@@ -60,48 +66,33 @@
   </section> -->
 
   <!-- web+mobile view of the contents -->
-  <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-
-     <div class="logo-container">
-      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
-      <HomeNav v-if="this.showWebView" />
+   
+ 
+  <div class="center">
+      
+      <div class="gra" id="b" style=""> <img src="@/assets/images/TEXT.png"></div>
     </div>
-    <div class="graphic check" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/Prism.png">
-    </div>
-    <div class="content">
-      <div class="Title">PRISMS<span class="X" >x</span> OF PERCEPTION </div>
-      <div class="Text">"Prisms of Perception" explores how our view of the world is shaped by various factors,
-         much like light through a prism. It highlights that different individuals have unique perspectives, 
-         and by changing our viewpoint, we can uncover new solutions and ideas, just as a prism reveals a fresh 
-         perspective on light, ultimately fostering innovation and understanding
-      </div>
-      <a href="https://www.youtube.com/watch?v=5Gps8XGdLfQ" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a>
-    </div>
-  </section>
 
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
     
-    <div class="graphic" id="b"><img src="@/assets/images/Ximage.png"></div>
-    <div class="content">
+    <div class="graphic" id="b" ><img src="@/assets/images/Vector.png"></div>
+    <div class="content" >
       <div class="title">What is TEDx?</div>
-      <div class="text">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program
+      <div class="text"  >In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program
         of local, self-organized events that bring people together to share a TED-like experience. Our event is called
         TEDx IITPatna, where x = independently organized TED event. At our TEDx IITPatna event, TED Talks video and live
         speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides
-        general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</div>
+        general guidance for the TEDx program, but individual TEDx events , including ours, are self-organized.</div>
       <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="link"
         rel="noopener noreferrer" >More about TEDx Program</a>
     </div>
   </section>
 
   <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="c"><img src="@/assets/images/prisms_V.png"></div>
-    <div class="content">
+    <div class="graphic" id="c"><img src="@/assets/images/Group32068.png"></div>
+    <div class="content" >
       <div class="title">What is Tedx IITPatna?</div>
-      <div class="text">Since 2016 TEDx IITPatna has strived to establish momentous and unforgettable events with
+      <div class="text" >Since 2016 TEDx IITPatna has strived to establish momentous and unforgettable events with
         discussions that have a long-term impact. With a footfall of 1500+ participants in our past events,
          we have continued to promote creativity and spark conversations even amid a global pandemic.
          As we reach a semblance of normalcy, this year, we present our fourth edition - "Infinite Affinities."
@@ -111,6 +102,10 @@
       <router-link to="/about" class="link">Know More</router-link>
     </div>
   </section>
+
+
+
+</div>
      
   <!-- <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
     <div class="title">Interested in becoming a speaker?</div>
@@ -187,6 +182,15 @@ export default {
 </script>
 
 <style>
+
 @import '@/assets/css/home.css';
 @import '@/assets/css/home.mobile.css';
+</style>
+<style scoped >
+.theme-bg{
+  background-image: url('/src/assets/images/Frame40.png');
+  overflow-x: hidden;
+  
+}
+
 </style>
