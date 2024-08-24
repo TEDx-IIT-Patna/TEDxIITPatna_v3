@@ -111,16 +111,18 @@
        </div>
  
    </div>
+   <TshirtBanner/>
  </template>
  
  <script scoped>
  import Nav from '@/components/Nav.vue';
  import HomeNav from '@/components/Home.Nav.vue';
  import BackButton from '@/components/BackButton.vue';
+ import TshirtBanner from './TshirtBanner.vue';
  
  export default {
    components: {
-       Nav ,HomeNav,BackButton
+       Nav ,HomeNav,BackButton,TshirtBanner
    }
  
  }

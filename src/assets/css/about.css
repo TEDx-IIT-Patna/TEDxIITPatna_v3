@@ -7,8 +7,10 @@
   min-height:100vh;
   font-family: poppins;
   position: relative;
-  background-image: url("../images/combined.png");
+  background: url("../images/combined1.png") ;
   background-size: cover;
+  -webkit-backdrop-filter: brightness(0.5);
+  backdrop-filter: brightness(0.5);
   padding:20px;
 }
 
