@@ -6,8 +6,7 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
-    background: linear-gradient(rgba(89, 25, 25, 0.90), rgba(89, 25, 25, 0.90)),
-        url('@/assets/images/banner.png') no-repeat;
+    background:  url('../images/tshirtbanner.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -46,7 +45,7 @@
 .tshirt {
     width: 100%;
     height: auto;
-    padding:  0px 20px;
+    padding:  0px  20px 20px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,8 +57,8 @@
     height: 400px;
     text-align: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 10px;
     border: 1px solid #ffffff;
     color: #FF2323;
@@ -115,6 +114,26 @@
     position: relative;
     top: -20px;
 }
+.combo-container , .single-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.buttonbuy{
+    background-color: #FF2323;
+    color:white;
+    border:none;
+    /* width:200px; */
+    /* height:50px; */
+    padding:20px 30px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.single-container{
+    gap:0px;
+}
+
 
 @media only screen and (max-width:1024px) {
     .tshirt {
@@ -133,6 +152,7 @@
         width:70%;
         height:auto
     }
+    
 /* 
     .tshirtgroup img {
         width: 80%;
