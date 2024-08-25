@@ -46,7 +46,7 @@ footer .Map {
 }
 
 footer .Map iframe {
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
     max-width: 500px;
     aspect-ratio: 16 / 9;
@@ -98,6 +98,7 @@ footer .socials {
     grid-area: socials;
     display: flex;
     padding: 1rem;
+    margin-left: 6rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -106,8 +107,7 @@ footer .socials {
 footer .socials .email {
     text-decoration: underline;
     color: var(--red-l1);
-    margin: 0.6ch 1ch;
-
+    margin: 0.6ch 0;
     font-weight: 500;
     letter-spacing: 0.07rem;
 }
@@ -116,25 +116,27 @@ footer .socials .links {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 1rem 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
 }
 
 footer .socials .link {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 40%;
+    transition: background-color 0.3s ease;
 }
 
-footer .socials .link+.link {
-    margin-left: 1rem;
+footer .socials .link:hover {
+    background-color: #B50000;
 }
 
 footer .socials .link .icon {
-    width: 100%;
+    width: 24px;
+    height: 20px;
 }
 
 footer .socials .link .name {
@@ -149,6 +151,7 @@ footer .socials .link .name {
     transition: all 0.2s;
     pointer-events: none;
     opacity: 0;
+    white-space: nowrap;
 }
 
 footer .socials .link:hover .name {
@@ -156,45 +159,84 @@ footer .socials .link:hover .name {
     transform: translate(-50%, 0px);
 }
 
+
 footer .disclaimer {
     grid-area: disclaimer;
-    text-align: center;
-    padding: 5%;
+    font-size: 19px;
+
+    padding: 2%;
+    margin-left: -2rem;
     text-transform: capitalize;
 }
 
-/* mobile view */
-@media only screen and (max-width: 1000px){
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
     footer {
+        display: grid;
         grid-template-areas:
             "logo logo"
             "map map"
             "links links"
-            "disclaimer disclaimer"
-        ;
+            "socials socials"
+            "disclaimer disclaimer";
         padding: 0 5%;
+        column-gap: 1rem;
+        place-items: center;
         place-content: center;
     }
+
     footer .Map {
+        display: flex;
         justify-content: center;
-    }
-    footer .Map iframe {
         width: 90%;
-        min-width: unset;
-        max-width: unset;
+    }
+
+    footer .Map iframe {
+        width: 100%;
         height: 25vh;
-        aspect-ratio: unset;
+        /* aspect-ratio: unset; */
     }
+
     footer .left-wrapper {
-        margin-top: 3rem;
-        grid-template-columns: auto auto;
-        place-content: center;
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
+
     footer .nav-links {
-        align-items: flex-end;
-        text-align: right;
-    }
-    footer .socials {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    footer .socials .links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    footer .socials .link {
+        margin-left: 0;
+    }
+
+    footer .disclaimer {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 1rem; */
     }
 }

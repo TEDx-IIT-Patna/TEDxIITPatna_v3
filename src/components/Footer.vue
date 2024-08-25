@@ -28,21 +28,17 @@
   <!-- <img src="@/assets/images/footerimg.png" class="footer-img"> -->
   <footer class="footer">
     <div class="logo">
-      <img src="@/assets/images/newlogo.png">
+      <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
     </div>
 
-    <div class="left-wrapper">
+
+    <div class="left-wrapper" style="display: flex;">
       <div class="nav-links">
         <NavLinks />
       </div>
 
-      <!-- <div class="misc-links">
-        <a href="#" class="link">Subscribe to our<br>mailing list!</a>
-        <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications</a>
-      </div> -->
-
       <div class="socials">
-        <a href="mailto:tedxiitpatna@gmail.com" class="email">tedxiitpatna@gmail.com</a>
+        <span style="font-size: 24px;"> Social media handles </span>
         <div class="links">
           <a href="https://www.instagram.com/tedxiitpatna/" target="_blank" class="link">
             <img src="@/assets/icons/instagram-icon-black.png" class="icon">
@@ -61,6 +57,7 @@
             <div class="name">TEDxIITPatna</div>
           </a>
         </div>
+        <a href="mailto:tedxiitpatna@gmail.com" class="email">tedxiitpatna@gmail.com</a>
 
       </div>
     </div>
@@ -71,7 +68,6 @@
         style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <!-- *** This thing's CSS needs to be reviewed -->
     <div class="disclaimer">This independent TEDx event is operated under license from TED.</div>
 
   </footer>
@@ -81,10 +77,10 @@
 import NavLinks from '@/components/NavLinks.vue'
 
 export default {
-    name: "Footer",
-    components: {
-        NavLinks,
-    }
+  name: "Footer",
+  components: {
+    NavLinks,
+  }
 }
 </script>
 

@@ -1,11 +1,20 @@
 <template>
-  <Nav open_button_color="white" open_button_style="icon" />
-
-  <BackButton />
+   <Nav v-if="!this.showWebView" open_button_style="icon" open_button_color="white" />
   
-  <img src="@/assets/images/tedxiitpatna_logo-2W.png" class="logo watermark"
-    v-if="this.screenWidth > 1100 && this.screenWidth > this.screenHeight * 1.51">
-  <div :class="['theme-bg', (this.screenWidth > this.screenHeight * 1.51) ? 'web' : 'mobile']" style="background-color: white;">
+  
+
+
+
+ <div class="graphic" >
+  <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
+  </div>
+ 
+  <div class="logo-container">
+      <!-- <img src="@/assets/images/newlogo.png" class="logo" style="height:70px;margin-left:40px;margin-top:-10vh;"> -->
+     <HomeNav v-if="this.showWebView" style="left: 33.5vw;"/>
+    </div>
+  
+  <div :class="['theme-bg', (this.screenWidth > this.screenHeight * 1.51) ? 'web' : 'mobile']">
     <img src="@/assets/past-events/poster-bg/poster-bg-2022.png">
   </div>
   <!-- eyeballed these 1.3 and 1.51 coefficients -->
@@ -13,17 +22,17 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title" style="color: black; margin-top: 0">INFINITE AFFINITIES</div>
+      <div class="title" style="color: white; display: flex;">INFINITE AFFINITIES <div class="year" style="  align-content:end ;">(2022)</div></div>
       <!-- <div class="catchphrase">The Acoustic of Strength</div> -->
-      <div class="year">2021</div>
-      <div class="intro" style="color: black;">We at TEDxIITPatna believe that dreams can become reality when everyone works together. We are an amalgamation of ideas - intertwined by the bonds we share. Through Infinite Affinities, we celebrate unity and the spirit of togetherness. We are human only through the humanity of others. If we are to accomplish anything- it will, in equal measure, be due to the work and achievements of the entire community. We all have a role to play and its vital that our actions inspire others to want to be a part of a better and brighter future.
+      
+      <div class="intro" style="color: white;">We at TEDxIITPatna believe that dreams can become reality when everyone works together. We are an amalgamation of ideas - intertwined by the bonds we share. Through Infinite Affinities, we celebrate unity and the spirit of togetherness. We are human only through the humanity of others. If we are to accomplish anything- it will, in equal measure, be due to the work and achievements of the entire community. We all have a role to play and its vital that our actions inspire others to want to be a part of a better and brighter future.
       </div>
     </div>
   </section>
 
   <section :class="['speakers-wrapper', this.screenWidth > 1.4 * this.screenHeight ? 'full' : '']">
     <div class="content">
-      <div class="title" style="color: black;">Speakers.</div>
+      <div class="title" style="background-image: linear-gradient(90deg, #EE0028 0%, #FFFFFF 57.37%) ; -webkit-background-clip: text; color: transparent;">Speakers</div>
       <div class="speakers">
         <div class="speaker" v-for="speaker in this.speakerDetails" :key="speaker" @click="this.configureSpeakerModal(speaker)">
           <img :src="speaker.imageSrc">
@@ -34,7 +43,7 @@
 
   <section class="gallery-wrapper full">
     <div class="content">
-      <div class="title" style="color: black;">Gallery.</div>
+      <div class="title" style="background-image: linear-gradient(90deg, #EE0028 0%, #FFFFFF 57.37%) ; -webkit-background-clip: text; color: transparent;left:15%;">Gallery</div>
       <div class="gallery">
         <div class="gallery-image" v-for="i in 6" @click="this.configureImageModal(i)">
           <img :src="require(`@/assets/past-events/gallery-images/2022/${i}.jpg`)">
@@ -65,6 +74,12 @@ import BackButton from '@/components/BackButton.vue'
 import ImageModal from '@/components/GalleryImageModal.vue'
 import SpeakerModal from '@/components/SpeakerDetailModal.vue'
 
+import HomeNav from '@/components/Home.Nav.vue'
+
+
+
+
+
 export default {
   name: "PastEventsView.2021",
   components: {
@@ -73,11 +88,13 @@ export default {
     BackButton,
     ImageModal,
     SpeakerModal,
+    HomeNav,
   },
   data() {
     return {
       screenWidth: window.innerWidth,
       screenHeight: window.innerHeight,
+      showWebView: window.innerWidth >= (1.51 * window.innerHeight),
       
       showImageModal: false,
       imageModalSrc: null,
@@ -146,6 +163,7 @@ export default {
     onResize() {
       this.screenWidth = window.innerWidth
       this.screenHeight = window.innerHeight
+      this.showWebView = window.innerWidth >= (1.51 * window.innerHeight)
     },
     configureImageModal(i) {
       this.imageModalSrc = require(`@/assets/past-events/gallery-images/2021/${i}.png`)
@@ -184,9 +202,13 @@ export default {
 
 <style scoped>
 @import '@/assets/css/past_events.common.css';
+.theme-bg{
+  background-image: url('/src/assets/images/Frame40.png');
+}
 
 .theme-bg.mobile img{
     transform: translate(17%, -50%);
     opacity: 0.6;
 }
+
 </style>
