@@ -34,6 +34,7 @@
     <div class="close" @click="this.state = 'hidden'">Close</div>
     <div class="links">
       <NavLinks />
+      <router-link to="/merch" class="buy">Buy</router-link>
     </div>
     <img src="@/assets/images/Flower-cropped.png" class="flower" style="opacity: 0.7">
   </nav>
@@ -61,7 +62,8 @@ export default {
       type: String,
       default: 'text',
       values: ['text', 'icon'],
-    },
+    },       
+
   },
   data() {
     return {
@@ -85,4 +87,7 @@ export default {
 
 <style scoped>
   @import '@/assets/css/nav.css';
+  .links .buy{
+    color:#EB0028;
+  }
 </style>

@@ -124,6 +124,14 @@ const routes = [
       title: "Coming Soon"
     },
   },
+  {
+    path: '/merch',
+    name: 'merch',
+    component: () => import(/* webpackChunkName: "tshirtbanner" */ '../views/TshirtBanner.vue'),
+    meta: {
+      title: "Merchandise"
+    },
+  },
   // *** Error404 path. This needs to be created.
   // {
   //   path: '*',

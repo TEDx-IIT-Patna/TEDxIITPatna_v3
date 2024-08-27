@@ -1,4 +1,6 @@
 <template>
+    <!-- <BackButton  /> -->
+    <!-- <Nav :open_button_color="this.showWebView ? 'white' : 'black'" open_button_style="text" /> -->
     <div class="banner-tshirt">
         <div class="logo-merch">
             <div class="logo"><img src="@/assets/images/tedxiitpatna_logo-1W.png" alt=""></div>
@@ -36,15 +38,30 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <Footer/>
+    
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue';
+import BackButton from '@/components/BackButton.vue';
+import Footer from '@/components/Footer.vue';
 export default {
-
+    components:{
+        Nav,BackButton,Footer
+    },
+    data() {
+    return {
+      screenWidth: window.innerWidth,
+      showWebView: window.innerWidth >= 830,
+    }
+  },
 }
 </script>
 
 <style>
 @import '../assets/css/tshirtbanner.css';
+
 </style>
