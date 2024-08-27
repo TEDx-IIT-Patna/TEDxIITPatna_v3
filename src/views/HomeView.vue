@@ -70,7 +70,7 @@
 
     <div class="center">
 
-      <div class="gra" id="b" style=""> <img src="@/assets/images/TEXT.png"></div>
+      <div class="gra" > <img src="@/assets/images/TEXT.png"></div>
     </div>
 
     <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
