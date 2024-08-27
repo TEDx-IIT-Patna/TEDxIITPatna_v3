@@ -59,6 +59,15 @@ const routes = [
   },
 
   // past events
+
+  {
+    path: '/pastevents/2023',
+    name: 'pastevent_2023',
+    component: () => import(/* webpackChunkName: "pastevent_2021" */ '../views/PastEvents/PastEvent.2023.vue'),
+    meta: {
+      title: "Prism Of Perception, 2023"
+    },
+  },
   {
     path: '/pastevents/2021',
     name: 'pastevent_2021',

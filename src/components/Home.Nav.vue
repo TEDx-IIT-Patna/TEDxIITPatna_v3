@@ -25,19 +25,19 @@
 -->
 
 <template>
-    <nav class="navbar-web">
-        <NavLinks />
-    </nav>
+  <nav class="navbar-web">
+      <NavLinks />
+  </nav>
 </template>
 
 <script>
 import NavLinks from '@/components/NavLinks.vue'
 
 export default {
-    name: "Home.Nav",
-    components: {
-        NavLinks,
-    }
+  name: "Home.Nav",
+  components: {
+      NavLinks,
+  }
 }
 </script>
 

@@ -1,0 +1,245 @@
+body {
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+.graphic {
+  height: 70px;
+  margin-top: 4vh;
+  margin-left: 4vh;
+}
+
+.div {
+  height: 1080px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.para {
+  width: 50%;
+  height: 100%;
+  margin-top: 7rem;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 4rem;
+}
+
+.speaker {
+  width: clamp(100px, 10vw, 180px);
+  height: clamp(100px, 10vw, 180px);
+  border-radius: 100%;
+  transition: all 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.speaker:hover {
+  background-color: var(--red-l1);
+}
+
+.gallery-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 6rem;
+  margin-top: 3rem;
+}
+
+.prism-img {
+  width: 550px;
+}
+
+.gallery-image {
+  width: clamp(150px, 10vw, 180px);
+  height: clamp(100px, 10vw, 180px);
+  transition: all 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.speaker:hover img,
+.gallery-image:hover img {
+  transform: scale(1.2);
+}
+
+.speaker img,
+.gallery-image img {
+  width: auto;
+  height: 100%;
+  transition: transform 0.2s;
+  transform: scale(1.1);
+  transition: all 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.text-speakers {
+  display: inline-block;
+  position: relative;
+  font-family: Inter;
+  font-size: 55px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ee0028, #ffffff);
+  background-clip: text;
+  color: transparent;
+  left: 7vw;
+  bottom: 4rem;
+}
+
+.text-gallery {
+  display: inline-block;
+  position: relative;
+  font-family: Inter;
+  font-size: 55px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ee0028, #ffffff);
+  background-clip: text;
+  color: transparent;
+  left: 14vw;
+  bottom: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 5%;
+  background-color: transparent;
+  /* overflow-x: hidden; */
+}
+
+.content-wrapper .content {
+  margin: 0 2rem 0 4rem;
+  text-align: justify;
+}
+
+.content-wrapper .content .Title {
+  max-width: 577px;
+  position: relative;
+  color: #fff;
+  text-align: left;
+  font-family: Molend, sans-serif;
+  font-weight: 800;
+  line-height: 95.2%;
+  text-align: left;
+  font-size: 70px;
+  display: inline;
+}
+
+.content-wrapper .content .Text {
+  color: #b5b5b5;
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 5rem;
+}
+
+.content-wrapper .content .Title .X {
+  color: #eb0028;
+  position: relative;
+  margin-right: 0;
+  top: -1rem;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 410px) {
+  .text-speakers,
+  .text-gallery {
+    font-size: 20px;
+  }
+
+  .content-wrapper .content .Title {
+    font-size: 34px;
+  }
+
+  .graphic{
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .speakers {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .speakers {
+    row-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gallery-grid {
+    margin-left: 7vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .prism-img {
+    display: none;
+  }
+
+  .text-speakers,
+  .text-gallery {
+    font-size: 40px;
+    left: 2vw;
+  }
+
+  .content-wrapper .para{
+    width: 80%;
+  }
+
+  .content-wrapper .content .Text {
+    background-image:  url('../images/Prism_Vector-removebg-blurred.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+}
+
+@media (min-width: 410px) and (max-width: 950px) {
+  .content-wrapper .content .Title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .gallery-grid {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    row-gap: 50px;
+  }
+
+  .prism-img {
+    width: 300px;
+  }
+
+  .content-wrapper .content .Text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1150px) {
+  .prism-img {
+    width: 400px;
+  }
+}
