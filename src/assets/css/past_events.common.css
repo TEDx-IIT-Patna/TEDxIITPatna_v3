@@ -55,8 +55,32 @@
 }
 
 .intro-wrapper .title {
+    
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    
+  
+
+
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.intro-wrapper .text{
+    font-size: calc(120 * (clamp(300px, 80vw, 600px) / 1080));
+   font-weight: 600;
+}
+.intro-wrapper .sub{
+        font-size: 3vw;
+     font-weight: 400;
+}
+
+.intro-wrapper .title {
     text-align: left;
-    font-size: 58.93px;
+    font-size: calc(120 * (clamp(300px, 80vw, 600px) / 1080));
+
+    
     font-weight: 600;
     text-transform: uppercase;
 }

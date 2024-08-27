@@ -24,7 +24,8 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title" style="display: flex;">Roar  <div class="year" style="align-content: end; ">(2021)</div></div>
+      <div class="title" ><p class="text">Roar  <sub  class="sub" >(2021)</sub>   </p> </div>
+     
       <div class="catchphrase">The Acoustic of Strength</div>
       
       <div class="intro">The 3rd Edition of TEDxIIT Patna, Roar- The Acoustic of Strength celebrated the spirit of
