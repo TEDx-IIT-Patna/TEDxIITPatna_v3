@@ -14,6 +14,12 @@
       <div class="event-scroller">
         <div class="event">
           <div class="thumbnail">
+            <router-link to="/pastevents/2023"><img src="@/assets/images/poster-square-2023.png"></router-link>
+          </div>
+          <div class="year">2023</div>
+        </div>
+        <div class="event">
+          <div class="thumbnail">
             <router-link to="/pastevents/2022"><img src="@/assets/images/poster-square-2022.png"></router-link>
           </div>
           <div class="year">2022</div>
@@ -55,6 +61,12 @@
       <div class="title-white">White</div> -->
 
       <div class="event-scroller">
+        <div class="event">
+          <div class="thumbnail">
+            <router-link to="/pastevents/2023"><img src="@/assets/images/poster-square-2023.png"></router-link>
+          </div>
+          <div class="year">2023</div>
+        </div>
         <div class="event">
           <div class="thumbnail">
             <router-link to="/pastevents/2022"><img src="@/assets/images/poster-square-2022.png"></router-link>

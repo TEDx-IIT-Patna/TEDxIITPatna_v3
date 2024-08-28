@@ -27,6 +27,9 @@
 <template>
     <nav class="navbar-web">
         <NavLinks />
+        <div>
+        <router-link to="/merch"><Button>Buy</Button></router-link>
+    </div>
     </nav>
 </template>
 
@@ -43,4 +46,5 @@ export default {
 
 <style scoped>
 @import '@/assets/css/home.nav.css';
+
 </style>
