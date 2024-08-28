@@ -23,8 +23,7 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title" style="display:inline-flex;  width: 80%;">Shedding Off Feathers   <div class="year" style="  align-content:end;">(2016)</div></div>
-    
+      <div class="title" > <p class="text">Shedding Off Feathers<sub  class="sub" >(2016)</sub> </p></div>    
       <div class="intro">
         <div class="quote">
           <div class="text">

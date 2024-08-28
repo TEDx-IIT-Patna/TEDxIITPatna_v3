@@ -22,7 +22,7 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title" style="color: white; display: flex;">INFINITE AFFINITIES <div class="year" style="  align-content:end ;">(2022)</div></div>
+      <div class="title"> <p class="text">INFINITE AFFINITIES <sub class="sub">(2022)</sub></p></div>
       <!-- <div class="catchphrase">The Acoustic of Strength</div> -->
       
       <div class="intro" style="color: white;">We at TEDxIITPatna believe that dreams can become reality when everyone works together. We are an amalgamation of ideas - intertwined by the bonds we share. Through Infinite Affinities, we celebrate unity and the spirit of togetherness. We are human only through the humanity of others. If we are to accomplish anything- it will, in equal measure, be due to the work and achievements of the entire community. We all have a role to play and its vital that our actions inspire others to want to be a part of a better and brighter future.

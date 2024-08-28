@@ -22,7 +22,7 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title"  style="display: flex;">Metamorphosis <div class="year" style="  align-content: end ;">(2019)</div></div>
+      <div class="title" ><p  class="text" >Metamorphosis  <sub  class="sub" >(2019)</sub>   </p> </div>
      
       <div class="intro">The 2nd Edition of TEDxIITPatna, Metamorphosis, put forth the ideology that permanence is an
         illusion, and everything in this universe is susceptible to change. Change is not always bad- it often brings

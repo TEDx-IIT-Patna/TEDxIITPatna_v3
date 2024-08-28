@@ -164,5 +164,8 @@
 .gra {
     z-index: 1;
     display: flex;
+    display: grid;
+    place-items: center;
+
     flex-direction: column;
 }

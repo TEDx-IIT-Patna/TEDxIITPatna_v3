@@ -20,11 +20,7 @@
 }
 
 .wrapper.mobile .title{
-    position: fixed;
-    top: min(1vh, 100px);
-    padding-left: 15.5vw;
-    font-size: calc(120 * (clamp(300px, 60vw, 600px) / 1080));
-    transform: translate(-50%,0);
+   
 }
 
 .partners-type.mobile{

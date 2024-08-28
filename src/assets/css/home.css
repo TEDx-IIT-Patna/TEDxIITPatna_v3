@@ -482,14 +482,14 @@ body {
 
  .gra img{
     width: 90%;
-    margin-left: 2rem;
+    margin-left: rem;
  
    
     height: auto;
     min-width: 200px;
  
     display: grid;
-    place-items: center;
+   
 }
 .center{
     display: grid;
