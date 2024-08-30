@@ -52,6 +52,7 @@
     <div class="close" @click="this.state = 'hidden'">Close</div>
     <div class="links">
       <NavLinks />
+      <router-link to="/merch" class="buy">Buy</router-link>
     </div>
     <img
       src="@/assets/images/Flower-cropped.png"
@@ -107,4 +108,7 @@ export default {
 
 <style scoped>
 @import "@/assets/css/nav.css";
+.links .buy {
+  color: #eb0028;
+}
 </style>

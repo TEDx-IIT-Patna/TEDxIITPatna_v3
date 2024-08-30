@@ -85,6 +85,14 @@ const routes = [
     },
   },
   {
+    path: '/pastevents/2023',
+    name: 'pastevent_2023',
+    component: () => import(/* webpackChunkName: "pastevent_2021" */ '../views/PastEvents/PastEvent.2023.vue'),
+    meta: {
+      title: "Prism_of_perception, 2023"
+    },
+  },
+  {
     path: '/pastevents/2019',
     name: 'pastevent_2019',
     component: () => import(/* webpackChunkName: "pastevent_2019" */ '../views/PastEvents/PastEvent.2019.vue'),
@@ -123,6 +131,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "commingsoon" */ '../views/ComingSoonView.vue'),
     meta: {
       title: "Coming Soon"
+    },
+  },
+  {
+    path: '/merch',
+    name: 'merch',
+    component: () => import(/* webpackChunkName: "tshirtbanner" */ '../views/TshirtBanner.vue'),
+    meta: {
+      title: "Merchandise"
     },
   },
   // *** Error404 path. This needs to be created.

@@ -24,8 +24,8 @@
   <section class="intro-wrapper full">
     <div class="bg"></div>
     <div class="content">
-      <div class="title" style="color: black; margin-top: 0">
-        INFINITE AFFINITIES
+      <div class="title">
+        <p class="text">INFINITE AFFINITIES <sub class="sub">(2022)</sub></p>
       </div>
       <!-- <div class="catchphrase">The Acoustic of Strength</div> -->
       <div class="year">2021</div>

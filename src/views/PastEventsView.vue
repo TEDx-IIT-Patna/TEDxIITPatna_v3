@@ -1,5 +1,5 @@
 <template>
-  <NewNav/>
+  <NewNav />
 
   <div class="img">
     <img
@@ -9,7 +9,7 @@
     />
   </div>
 
-  <HomeNav class="thisHomeNav"/>
+  <HomeNav class="thisHomeNav" />
 
   <section class="wrapper">
     <div class="pastevents-wrapper">
@@ -70,7 +70,7 @@ import HomeNav from "@/components/Home.Nav.vue";
 export default {
   components: {
     HomeNav,
-    NewNav
+    NewNav,
   },
 };
 </script>
@@ -78,29 +78,26 @@ export default {
 <style scoped>
 @import "../assets/css/past_events_new.css";
 
-.thisNav{
+.thisNav {
   display: none;
 }
 
-.thisHomeNav{
+.thisHomeNav {
   left: 31vw;
   bottom: 71vh;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 548;
 }
 
-@media screen and (max-width: 1400px){
-  .thisHomeNav{
+@media screen and (max-width: 1400px) {
+  .thisHomeNav {
     display: none;
   }
 }
 
-@media screen and (max-height: 700px){
-  .thisHomeNav{
+@media screen and (max-height: 700px) {
+  .thisHomeNav {
     bottom: 65vh;
   }
-
 }
-
-
 </style>

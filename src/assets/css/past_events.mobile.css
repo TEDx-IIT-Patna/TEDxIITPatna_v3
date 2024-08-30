@@ -42,15 +42,7 @@
 }
 
 .wrapper.mobile .pastevents-wrapper .title{
-    position: fixed;
-    top: min(20vh, 150px);
-    padding-left: 5vw;
-    font-size: calc(120 * (clamp(300px, 80vw, 600px) / 1080));
-    color: #FF2B1D;
-/* font-family: Poppins; */
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+   
 }
 
 .wrapper.mobile .event-scroller{
@@ -94,3 +86,19 @@ line-height: normal;
     height: 2px;
     background-color: var(--red-l1);
 }
+.intro-wrapper .bg .content .title {
+    
+    display: flex;
+    justify-content: center;
+    
+    width: 90%;
+   background-color: aquamarine;
+    font-size: 58.95px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.intro-wrapper .title .sub{
+    font-size: 23px; font-weight: 400;
+}
+

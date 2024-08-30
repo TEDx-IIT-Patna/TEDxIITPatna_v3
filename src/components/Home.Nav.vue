@@ -26,21 +26,25 @@
 
 <template>
   <nav class="navbar-web">
-      <NavLinks />
+    <NavLinks />
+    <div>
+      <router-link to="/merch"><Button>Buy</Button></router-link>
+    </div>
   </nav>
 </template>
 
 <script>
-import NavLinks from '@/components/NavLinks.vue'
+import NavLinks from "@/components/NavLinks.vue";
 
 export default {
   name: "Home.Nav",
   components: {
-      NavLinks,
-  }
-}
+    NavLinks,
+  },
+};
 </script>
 
 <style scoped>
-@import '@/assets/css/home.nav.css';
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "@/assets/css/home.nav.css";
 </style>
