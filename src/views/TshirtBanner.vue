@@ -3,7 +3,7 @@
     <!-- <Nav :open_button_color="this.showWebView ? 'white' : 'black'" open_button_style="text" /> -->
     <div class="banner-tshirt">
         <div class="logo-merch">
-            <div class="logo"><img src="@/assets/images/tedxiitpatna_logo-1W.png" alt=""></div>
+            <div class="logo"><router-link to="/"><img src="@/assets/images/tedxiitpatna_logo-1W.png" alt=""></router-link></div>
             <div class="merch">OFFICAL TED<span>X</span><br />MERCHANDISE</div>
         </div>
         <div class="tshirt">
