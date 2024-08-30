@@ -73,9 +73,11 @@
       <div class="gra" > <img src="@/assets/images/TEXT.png"></div>
     </div>
 
+
+
     <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
 
-      <div class="graphic" id="b"><img src="@/assets/images/Vector.png"></div>
+      
       <div class="content">
         <div class="title">What is TEDx?</div>
         <div class="text">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a
@@ -88,10 +90,11 @@
         <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="link"
           rel="noopener noreferrer">More about TEDx Program</a>
       </div>
+      <div class="graphic" id="c"><img src="@/assets/images/Vector.png"></div>
     </section>
 
     <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-      <div class="graphic" id="c"><img src="@/assets/images/Group32068.png"></div>
+      
       <div class="content">
         <div class="title">What is Tedx IITPatna?</div>
         <div class="text">Since 2016 TEDx IITPatna has strived to establish momentous and unforgettable events with
@@ -104,6 +107,7 @@
         </div>
         <router-link to="/about" class="link">Know More</router-link>
       </div>
+      <div class="graphic" id="c"><img src="@/assets/images/Group32068.png"></div>
     </section>
 
 
@@ -115,7 +119,7 @@
     <a href="https://forms.gle/jhDwBQmSFid4jjPZ6" target="_blank" class="link">Speaker Applications →</a>
   </section> -->
 
-  <Footer />
+  <Footer/>
 </template>
 
 <script scoped>
