@@ -71,7 +71,7 @@
 
 .intro-wrapper .text{
     font-size: calc(120 * (clamp(300px, 80vw, 600px) / 1080));
-   font-weight: 600;
+   font-weight: 700;
 }
 .intro-wrapper .sub{
         font-size: 3vw;
@@ -81,11 +81,14 @@
 .intro-wrapper .title {
     text-align: left;
     font-size: calc(120 * (clamp(300px, 80vw, 600px) / 1080));
-
     
+    font-family:"poppins", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+  
 }
+
+
 
 .intro-wrapper .catchphrase {
     text-align: left;
@@ -117,6 +120,7 @@
     font-size: calc(35 * (clamp(400px, 80vw, 500px) / 1080));
     line-height: calc(55 * (clamp(400px, 80vw, 500px) / 1080));
     font-weight: 400;
+    font-family:"poppins", sans-serif;
     letter-spacing: 0.1rem;
 }
 
@@ -186,6 +190,8 @@
 
 .speakers,
 .gallery {
+    
+    margin-left: 1rem;
     display: flex;
     width: 100%;
     max-width: 600px;
