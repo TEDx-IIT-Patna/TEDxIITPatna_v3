@@ -63,7 +63,6 @@ body {
   transition: all 0.2s;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 10px;
 }
 
 .speaker:hover img,
@@ -166,7 +165,7 @@ body {
     font-size: 34px;
   }
 
-  .graphic{
+  .graphic {
     height: 55px;
   }
 }
@@ -199,16 +198,15 @@ body {
     left: 2vw;
   }
 
-  .content-wrapper .para{
+  .content-wrapper .para {
     width: 80%;
   }
 
   .content-wrapper .content .Text {
-    background-image:  url('../images/Prism_Vector-removebg-blurred.png');
+    background-image: url("../images/Prism_Vector-removebg-blurred.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
   }
 }
 
