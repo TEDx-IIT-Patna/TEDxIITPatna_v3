@@ -22,6 +22,7 @@
             /></a>
           </div>
           <div class="year">2023</div>
+          <div class="mobYear">2023</div>
         </div>
         <div class="event">
           <div class="thumbnail">
@@ -30,6 +31,7 @@
             /></a>
           </div>
           <div class="year">2022</div>
+          <div class="mobYear">2022</div>
         </div>
       </div>
 
@@ -41,6 +43,7 @@
             /></a>
           </div>
           <div class="year">2021</div>
+          <div class="mobYear">2021</div>
         </div>
         <div class="event">
           <div class="thumbnail">
@@ -49,6 +52,7 @@
             /></a>
           </div>
           <div class="year">2019</div>
+          <div class="mobYear">2019</div>
         </div>
         <div class="event">
           <div class="thumbnail">
@@ -57,6 +61,7 @@
             /></a>
           </div>
           <div class="year">2016</div>
+          <div class="mobYear">2016</div>
         </div>
       </div>
     </div>
