@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="buttonbuy">BUY NOW </button>
+                    <button class="buttonbuy"><a href=" https://forms.gle/1sjTXXpmLoQ7qMTH8" target="_blank">BUY NOW</a> </button>
                 </div>
             </div>
             <div class="single-container">
@@ -34,14 +34,14 @@
                     <img src="@/assets/images/tshirtsingle.png" alt="">
                 </div>
                 <div>
-                    <button class="buttonbuy">BUY NOW </button>
+                    <button class="buttonbuy"><a href=" https://forms.gle/1sjTXXpmLoQ7qMTH8" target="_blank">BUY NOW</a> </button>
                 </div>
             </div>
         </div>
-        
+
     </div>
-    <Footer/>
-    
+    <Footer />
+
 </template>
 
 <script>
@@ -49,19 +49,21 @@ import Nav from '@/components/Nav.vue';
 import BackButton from '@/components/BackButton.vue';
 import Footer from '@/components/Footer.vue';
 export default {
-    components:{
-        Nav,BackButton,Footer
+    components: {
+        Nav, BackButton, Footer
     },
     data() {
-    return {
-      screenWidth: window.innerWidth,
-      showWebView: window.innerWidth >= 830,
-    }
-  },
+        return {
+            screenWidth: window.innerWidth,
+            showWebView: window.innerWidth >= 830,
+        }
+    },
 }
 </script>
 
 <style>
 @import '../assets/css/tshirtbanner.css';
-
+.buttonbuy a:hover{
+    color:rgba(255, 255, 255, 0.5);
+}
 </style>
