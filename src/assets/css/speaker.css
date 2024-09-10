@@ -35,7 +35,7 @@
     margin-top: 40px;
   }
   .info{
-   
+    padding: 5%;
     height: 277px;
     width: 360px;
     color: #ffffff;
@@ -196,7 +196,8 @@ max-width: 90%;
 
 }
 .abou{
-    margin-top: 8rem;
+    margin-top: 4rem;
+    padding: 1.5rem;
    
     text-align: center;
     display: flex;
@@ -219,6 +220,7 @@ max-width: 90%;
     display: flex;
     background-color:#B50000;
     
+  padding: 1%;
   
     justify-content: center;
     align-items: center;
@@ -253,6 +255,7 @@ max-width: 90%;
     width: 116px;
     border-radius: 12px;
     height: 16px;
+    margin-bottom: 8%;
   color: rgb(255, 255, 255);
 
     
@@ -300,3 +303,6 @@ margin-left: 2rem;
     
     }
 } */
+body{
+ font-family:'poppins' , sans-serif;
+}

@@ -256,7 +256,7 @@
 
 
 <div class="container" v-else style="">
-  <img class="imge" src="@/assets/images/speaker/prinyanka.png" style=" height: 250px;width: 240px;">
+  <img class="imge" src="@/assets/images/speaker/prinyanka.png" style=" height: 250px;width: 260px;">
   <div class="info">
     Priyanka Tripathi is an Associate Professor of English and former HOD of Humanities and Social Sciences at IIT Patna.She is also the Co-Executive Editor of the Journal of International Women’s Studies (published by Bridgewater State University). She has been awarded the prestigious Charles Wallace India Trust Visiting Fellowship (2024-25) at the School of History,
      University of Leeds. She was also awarded the IPD Visiting Research Fellowship (2022-23) at IASH, University of Edinburgh. She has published extensively and works in the areas of Gender Studies, South Asian Fiction, GeoHumanities, and Graphic Novels.  </div>
