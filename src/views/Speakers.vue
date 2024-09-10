@@ -1,134 +1,355 @@
-<template>
+<template  style="background-color:black;">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molend">
-  <div class="graphic" style="background-color:#111111">
+  <div class="graphic" style="background-color:black">
     <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:4vh;margin-left:4vh;"> -->
     <Nav :open_button_color="this.showWebView ? 'white' : 'white'" open_button_style="text" />
     <BackButton />
   </div>
+
+
+
   <!-- <Nav :open_button_color="this.showWebView ? 'white' : 'black'" open_button_style="text" />
   <BackButton /> -->
   <!-- web+mobile view of the contents -->
-  <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/ANISH.png">
+   <div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/nehaag1.png">
+     
     </div>
-    <div class="content">
-      <div class="title">ANISH<span class="X" ></span> MALPANI </div>
-      <div class="Text">"Anish Malpani is a social entrepreneur and a spoken word artist who is the founder of Ashaya, 
-        a start-up that transforms multi-layered plastic waste into high-quality products. He left his lucrative job in the US and returned 
-        to India to work with waste pickers for a social cause. He has a BBA degree from the University of Texas and has over 9 years of experience
-         in finance, operations, data and the social impact space across three continents. He launched Ashaya in 2021 and developed
-        a patent-pending technology to extract materials from multi-layered plastic waste, such as chips packets.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
+   
+        <div class="abou" >
+            
+            <div class="text"   style="color: aliceblue;">
+              Neha Agarwal, founder of the esteemed "Mathematically Inclined," is a passionate mathematics maven. Holding degrees from the prestigious 
+              University of Delhi, Neha's YouTube channel boasts an enviable 1.5 million 
+              subscribers and 150 million views, showcasing her proficiency in math tutorials, problem-solving,
+               and study guidance. With a remarkable average watch time and engagement rate,
+                her channel has consistently ranked among India's top educational platforms.
+                 Her content has also been recognized internationally, earning prestigious awards for innovative education. 
+                 Notably, she has received the coveted "Best ZONAL Teacher Award" from the International Mathematics Olympiad.
+                  Featured among YouTube's "Best Education Channels," Neha's tireless endeavors have ignited a profound passion for mathematics in countless scholars and enthusiasts.
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but">
+                <a  class="linkk"  href="#">Talk -></a> 
+              
+            </div>
+          </div>
     </div>
-  </section>
-    
-  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
-            <div class="title">Register for the session 1</div>
-    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
-  </section>
-  <hr style="background-color:black;border:none;height:2px;">
-      <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/Shikhar.png">
-    </div>
-    <div class="content">
-      <div class="title">SHIKHAR<span class="X" ></span> GOEL </div>
-      <div class="Text">"Shikhar Goel's outstanding track record in crafting groundbreaking products showcases his unmatched ability
-         to innovate. As one of the brilliant minds behind the inception of GeeksforGeeks, he has consistently exhibited a forward- thinking 
-         mindset and an unwavering dedication to achieving excellence. Through his visionary leadership, Shikhar has played a pivotal role 
-         in transforming GeeksforGeeks into the ultimate hub for coding enthusiasts across the globe, a testament to his remarkable leadership 
-         and passion for the field.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
-  </section>
-  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
-            <div class="title">Register for the session 1</div>
-    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
-  </section>
-<hr style="background-color:black;border:none;height:2px;">
-    <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/Deepti.png">
-    </div>
-    <div class="content">
-      <div class="title">DEEPTI<span class="X" ></span> ASTHANA</div>
-      <div class="Text">"Deepti Asthana is
-        an independent photographer, film-maker, educator and National Geographic Explorer. Her work focuses on gender 
-        and environmental issues in traditional societies of India. Her keen interest in slow and long form documentary 
-        photography allows her in- depth access into the lives of the people she photographs. In the year 2020, Deepti was 
-        awarded by World Press Photo under their Global Talent 6*6 program. Deepti is currently documenting the water crisis 
-        in Western Himalayas and how it impacts lives of young women. Her project is supported by The National Geographic Society.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
-  </section>
-  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
-            <div class="title">Register for the session 2</div>
-    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
-  </section>
-    <hr style="background-color:black;border:none;height:2px;">
-  <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/shraddha.png">
-    </div>
-    <div class="content">
-      <div class="title">SHRADHA<span class="X" ></span> KHAPRA </div>
-      <div class="Text">"Shradha Khapra is a young and popular educator, content creator, coding teacher, YouTuber, 
-        and social media star from Haryana, India. She is known for being one of the best coding educators in
-         the country, who left her job at Microsoft to help Indian students learn to code. She joined Microsoft
-          as a full-time employee in Hyderabad but later quit her job to pursue her passion for teaching coding.
-           She collaborated with Aman Dhattarwal and started giving online coding classes on YouTube and other 
-           platforms. She is also an entrepreneur and runs her own company called Apna College, which provides
-            online courses and guidance for engineering students.
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
-  </section>
-  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
-        <div class="title">Register for the session 2</div>
-    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
-  </section>
-  <hr style="background-color:black;border:none;height:2px;">
+  </div>
+</div> 
 
-  <section :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']">
-    <div class="graphic" id="a">
-      <!-- <img src="@/assets/images/newlogo.png" style="height:70px;margin-top:-5vh;margin-left:-00vh;"> -->
-      <img src="@/assets/images/shreyashi.png">
-    </div>
-    <div class="content">
-      <div class="title">SHREYASHI<span class="X" ></span> SINGH </div>
-      <div class="Text">"Shreyasi Singh is an Indian shooter and politician. She competes in the double 
-        trap event. She won a gold medal in the Shooting at the 2018 Commonwealth Games in Gold Coast, 
-        Australia - Women's double trap and a silver medal at the 2014 Commonwealth Games in Glasgow, 
-        Scotland. In 2020, she joined India's ruling Bharatiya Janata Party and is a Member of Bihar 
-        Legislative Assembly from Jamui constituency. Singh was part of the Indian team at the 2013 Trap 
-        Shooting World Cup held in Acapulco, Mexico. She won the 15th position there. At the young age of
-         30, she joined the Bharatiya Janata Party in 2020 
-      </div>
-      <!-- <a href="https://www.ted.com/about/programs-initiatives/tedx-program" target="_blank" class="Link"
-        rel="noopener noreferrer">  <span style="vertical-align: middle;">Theme Video</span><img src="@/assets/images/Arrow.png" style="vertical-align: middle;"></a> -->
-    </div>
-  </section>
-  <section :class="['speaker-application', this.screenWidth > 560 ? 'web' : 'mobile']">
-            <div class="title">Register for the session 2</div>
-    <a href="https://forms.gle/W2RttF6PUNWev2hD9" target="_blank" class="link">Register-></a>
-  </section>
- <hr style="background-color:black;border:none;height:2px;">
 
+<div class="container" v-else>
+  <img class="imge" src="@/assets/images/speaker/nehaag1.png">
+  <div class="info">
+    Neha Agarwal, founder of the esteemed "Mathematically Inclined," is a passionate mathematics maven. Holding degrees from the prestigious 
+              University of Delhi, Neha's YouTube channel boasts an enviable 1.5 million 
+              subscribers and 150 million views, showcasing her proficiency in math tutorials, problem-solving,
+               and study guidance. With a remarkable average watch time and engagement rate,
+                her channel has consistently ranked among India's top educational platforms.
+                 Her content has also been recognized internationally, earning prestigious awards for innovative education. 
+                 Notably, she has received the coveted "Best ZONAL Teacher Award" from the International Mathematics Olympiad.
+                  Featured among YouTube's "Best Education Channels," Neha's tireless endeavors have ignited a profound passion for mathematics in countless scholars and enthusiasts.
+            
+  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+
+</div>
+  
+
+
+<div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/satyanshu.png" style="margin-bottom: -4rem;">
+     
+    </div>
+   
+        <div class="abou" >
+            
+            <div class="text"   style="color: aliceblue;">
+              Satyanshu is a National Award-winning filmmaker,
+               writer and professor of cinema. His debut feature film,
+                Chintu Ka Birthday, released in 2020 on ZEE5 to widely 
+                
+                positive reception by critics and audiences alike.
+                
+                He started his professional journey by writing poems for Vikramaditya Motwane's Udaan,
+                 produced by Anurag Kashyap. Satyanshu has also written lyrics for Amit V. Masurkar's Sulemani Keeda and Vinod Chopra Films'
+                  Ferrari Ki Sawaari. His directorial debut was a Kashmiri short film Tamaash, which won several awards at different film festivals,
+                   including a National Award. In addition to writing and directing, Satyanshu has conducted screenwriting courses at Anupam Kher's 'Actor Prepares' as well as workshops across India.
+                    Satyanshu has designed and mentored both seasons of AIB's 'First Draft' screenwriter residency programme. During the COVID-19 pandemic, he launched a fundraising initiative by conducting online lectures on cinema. 
+                    Satyanshu has also been a creative consultant with Sony LIV across several projects. He is currently working on the recently announced third season of AIB's 'First Draft' programme. Most recently, Satyanshu co-directed the Sony LIV series Jehanabad - Of Love & War, which was well received by both critics and audiences alike. He is also developing a series for Vikramaditya Motwane, and is simultaneously developing his original series and feature ideas.
+               He is also consulting on several projects across formats.
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but" >
+                <a  class="linkk"  href="#">Talk -></a> 
+               
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container" v-else>
+  <img class="imge" src="@/assets/images/speaker/satyanshu.png" style="height: 280px; width:280px ;">
+  <div class="info">
+    Satyanshu is a National Award-winning filmmaker,
+               writer and professor of cinema. His debut feature film,
+                Chintu Ka Birthday, released in 2020 on ZEE5 to widely 
+                
+                positive reception by critics and audiences alike.
+                
+                He started his professional journey by writing poems for Vikramaditya Motwane's Udaan,
+                 produced by Anurag Kashyap. Satyanshu has also written lyrics for Amit V. Masurkar's Sulemani Keeda and Vinod Chopra Films'
+                  Ferrari Ki Sawaari. His directorial debut was a Kashmiri short film Tamaash, which won several awards at different film festivals,
+                   including a National Award. In addition to writing and directing, Satyanshu has conducted screenwriting courses at Anupam Kher's 'Actor Prepares' as well as workshops across India.
+                    Satyanshu has designed and mentored both seasons of AIB's 'First Draft' screenwriter residency programme. During the COVID-19 pandemic, he launched a fundraising initiative by conducting online lectures on cinema. Satyanshu has also been a creative consultant with Sony LIV across several projects. He is currently working on the recently announced third season of AIB's 'First Draft' programme. Most recently, Satyanshu co-directed the Sony LIV series Jehanabad - Of Love & War, which was well received by both critics and audiences alike. He is also developing a series for Vikramaditya Motwane, and is simultaneously developing his original series and feature ideas.
+               He is also consulting on several projects across formats.
+  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+</div>
+  
+
+<div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/pankajh.png" style="height: 380px; width: 1200px;margin-bottom: -1rem;">
+     
+    </div>
+   
+        <div class="abou" >
+            
+            <div class="text"     style="color: aliceblue;">
+              Pankaj Jha, a versatile artist with a career spanning over two decades, 
+              
+              has captivated audiences across film, theater, and literature. 
+              As an alumnus of the National School of Drama, Pankaj's nuanced performances 
+              in acclaimed films like "Monsoon Wedding," "Black Friday," and "Gulaal" have 
+              earned him widespread recognition. Beyond acting, his artistic talents extend
+               to painting and poetry, showcased in six solo exhibitions and poignant 
+               literary works. Pankaj's recent portrayal in "Panchayat 2" as Vidhayak Ji has
+                further cemented his reputation as a talented and versatile artist.
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but" >
+                <a  class="linkk"  href="#">Talk -></a> 
+               
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+<div class="container" v-else>
+  <img class="imge" src="@/assets/images/speaker/pankajh.png" style="height: 280px; width:390px ;">
+  <div class="info">
+    Satyanshu is a National Award-winning filmmaker,
+               writer and professor of cinema. His debut feature film,
+                Chintu Ka Birthday, released in 2020 on ZEE5 to widely 
+                
+                positive reception by critics and audiences alike.
+                
+                He started his professional journey by writing poems for Vikramaditya Motwane's Udaan,
+                 produced by Anurag Kashyap. Satyanshu has also written lyrics for Amit V. Masurkar's Sulemani Keeda and Vinod Chopra Films'
+                  Ferrari Ki Sawaari. His directorial debut was a Kashmiri short film Tamaash, which won several awards at different film festivals,
+                   including a National Award. In addition to writing and directing, Satyanshu has conducted screenwriting courses at Anupam Kher's 'Actor Prepares' as well as workshops across India.
+                    Satyanshu has designed and mentored both seasons of AIB's 'First 
+                    Draft' screenwriter residency programme. During the COVID-19 pandemic, he launched a fundraising initiative by conducting online lectures on cinema. Satyanshu has also been a creative consultant with Sony LIV across several projects. He is currently working on the recently announced third season of AIB's 'First Draft' programme. Most recently, Satyanshu co-directed the Sony LIV series Jehanabad - Of Love & War, which was well received by both critics and audiences alike. He is also developing a series for Vikramaditya Motwane, and is simultaneously developing his original series and feature ideas.
+               He is also consulting on several projects across formats.
+  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+</div>
+  
+
+
+<div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/arsh.png" style=" margin-bottom: -3rem; margin-left: 3rem">
     
-     <hr style="background-color:black;border:none;height:2px;">
+    </div>
+   
+        <div class="abou" >
+            
+            <div class="text"   style="color: aliceblue;">
+              Arsh Goyal is a visionary tech leader and educator.
+               Currently a Senior Software Engineer at Samsung India and a former Data 
+               Scientist at ISRO, Arsh seamlessly blends his technical expertise with a 
+               deep passion for teaching. Through platforms like CodeChef and Unacademy, 
+               he continues to share his insights, nurturing the next generation of innovators and problem-solvers.
+               With over 100K subscribers on his YouTube channel and a strong social media presence, Arsh inspires and empowers learners to unlock their full potential in the tech world
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but">
+                <a  class="linkk"  href="#">Talk -></a> 
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container" v-else>
+  <img class="imge" src="@/assets/images/speaker/arsh.png" style="  height: 250px;width: 240px;">
+  <div class="info">
+    Arsh Goyal is a visionary tech leader and educator. Currently a Senior Software Engineer at Samsung India and a former Data Scientist at ISRO, Arsh seamlessly blends his technical expertise with a deep passion for teaching. Through platforms like CodeChef and Unacademy, he continues to share his insights, nurturing the next generation of innovators and problem-solvers. With over 100K subscribers on his YouTube channel and a strong social media presence, Arsh inspires and empowers learners to unlock their full potential in the tech world
+  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+
+</div>
+  
+
+<div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/prinyanka.png" style=" margin-bottom: -4rem; margin-left: 3rem">
+    
+    </div>
+   
+        <div class="abou" >
+            
+            <div class="text"   style="color: aliceblue;">
+              Priyanka Tripathi is an Associate Professor of English and former HOD of Humanities and Social Sciences at IIT Patna.She is also the Co-Executive Editor of the Journal of International Women’s Studies (published by Bridgewater State University). She has been awarded the prestigious Charles Wallace India Trust Visiting Fellowship (2024-25) at the School of History, University of Leeds. She was also awarded the IPD Visiting Research Fellowship (2022-23) at IASH, University of Edinburgh. She has published extensively and works in the areas of Gender Studies, South Asian Fiction, GeoHumanities, and Graphic Novels.
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but">
+                <a  class="linkk"  href="#">Talk -></a> 
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container" v-else style="">
+  <img class="imge" src="@/assets/images/speaker/prinyanka.png" style=" height: 250px;width: 240px;">
+  <div class="info">
+    Priyanka Tripathi is an Associate Professor of English and former HOD of Humanities and Social Sciences at IIT Patna.She is also the Co-Executive Editor of the Journal of International Women’s Studies (published by Bridgewater State University). She has been awarded the prestigious Charles Wallace India Trust Visiting Fellowship (2024-25) at the School of History,
+     University of Leeds. She was also awarded the IPD Visiting Research Fellowship (2022-23) at IASH, University of Edinburgh. She has published extensively and works in the areas of Gender Studies, South Asian Fiction, GeoHumanities, and Graphic Novels.  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+
+</div>
+  
+
+
+  
+
+  
+<div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/swat.png">
+     
+    </div>
+   
+        <div class="abou" >
+            
+            <div class="text"   style="color: aliceblue;">
+              Swastika Rajput is a storyteller who turned her passion for writing and the arts into a powerful journey of self-discovery. Trained as a nurse, she found a new path through photography, capturing authentic emotions and building an inclusive community of nearly 470k Instagram followers and 350k YouTube subscribers where her voice echoes. She has embraced her journey of coming out as a queer despite her average circumstances. She faced setbacks but stayed true to her heart, ultimately earning a standing ovation from 600 people, proving that perseverance and passion lead to success.
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but">
+                <a  class="linkk"  href="#">Talk -></a> 
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container" v-else>
+  <img class="imge" src="@/assets/images/speaker/swat.png" style=" width: 280px;">
+  <div class="info">
+    Swastika Rajput is a storyteller who turned her passion for writing and the arts into a powerful journey of self-discovery. Trained as a nurse, she found a new path through photography, capturing authentic emotions and building an inclusive community of nearly 470k Instagram followers and 350k YouTube subscribers where her voice echoes. She has embraced her journey of coming out as a queer despite her average circumstances. She faced setbacks but stayed true to her heart, ultimately earning a standing ovation from 600 people, proving that perseverance and passion lead to success.
+  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+
+</div>
+
+
+<div :class="['content-wrapper', 'full', this.screenWidth > 1000 ? 'web' : 'mobile']" v-if="this.screenWidth>1000"> 
+    <div class=" cont">
+   <div class="graphi" >
+      <img class="img" src="@/assets/images/speaker/manu.png" style="width: 680px;">
+     
+    </div>
+   
+        <div class="abou" >
+            
+            <div class="text"   style="color: aliceblue;">
+              Manushi Ashok Jain is an Architect and Urban Designer, known for her out of the box designs promoting sustainability throughout the world. She is the Co-founder and Director of Sponge Collaborative, an interdisciplinary strategic planning and design firm that is looking to find a perfect balance between modernism and regionalism. She has worked on projects throughout the world and has received many international awards, including the Creatives Theme Design Medal Award by A+D magazine. She also made it to the Forbes 30 under 30 young leaders' list in 2022. She continues to strive harder in her field and is all set to bring her unique perspective on the table.
+            </div> 
+            
+              <div class="talk_button">
+              <div class="but">
+                <a  class="linkk"  href="#">Talk -></a> 
+              
+            </div>
+          </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container" v-else>
+  <img class="imge" src="@/assets/images/speaker/manu.png" style="width: 250px;">
+  <div class="info">
+    Manushi Ashok Jain is an Architect and Urban Designer, known for her out of the box designs promoting sustainability throughout the world. She is the Co-founder and Director of Sponge Collaborative, an interdisciplinary strategic planning and design firm that is looking to find a perfect balance between modernism and regionalism. She has worked on projects throughout the world and has received many international awards, including the Creatives Theme Design Medal Award by A+D magazine. She also made it to the Forbes 30 under 30 young leaders' list in 2022. She continues to strive harder in her field and is all set to bring her unique perspective on the table.  </div>
+  <div class="talk_butto">
+              <div class="but">
+                <a  class="linkk"  href="#"  style="display: flex ; justify-content: center;">Talk -></a> 
+              
+            </div>
+          </div>
+
+</div>
+
 
   <Footer />
 </template>
@@ -139,6 +360,7 @@ import Nav from '@/components/Nav.vue'
 import HomeNav from '@/components/Home.Nav.vue'
 import Footer from '@/components/Footer.vue'
 import BackButton from '@/components/BackButton.vue'
+import Speakersectio from '@/components/Speakersectio.vue'
 
 export default {
   name: 'HomeView',
@@ -147,6 +369,7 @@ export default {
     Footer,
     HomeNav,
     BackButton,
+    Speakersectio,
   },
   data() {
     return {
@@ -201,7 +424,29 @@ export default {
 }
 </script>
 
-<style>
-@import '@/assets/css/home.css';
-@import '@/assets/css/home.mobile.css';
+<style scope>
+
+
+@import '@/assets/css/speaker.css';
+.content-wrapper{
+  background-image: url("../assets/images/spekerbg.jpg");
+ 
+  background-size: contain; /* or 'cover' depending on your needs */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* height:100%; */
+
+  /* padding: 0; */
+  /* height: vh; */
+  /* width: 40vw; */
+  height: 64.7vh;
+  width: 100vw;
+ 
+
+  background-position: center center;
+
+
+}
+
 </style>
